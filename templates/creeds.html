@@ -1,0 +1,118 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="stylesheet" href="{% static 'creed.css' %}">
+    <title>This Excellent Church</title>
+</head>
+
+<body>
+    <nav>
+        <div class="nav__content">
+            <div class="logo"><a href="/"><img src="{% static 'assets\logo.png' %}" alt=""></a></div>
+            <label for="check" class="checkbox">
+                <i class="ri-menu-line"></i>
+            </label>
+            <input type="checkbox" name="check" id="check" />
+            <ul>
+                <li><a href="{% url 'about' %}">ABOUT TEC</a></li>
+                <li><a href="{% url 'resource' %}">RESOURCE CENTER</a></li>
+                <li><a href="{% url 'roadmap' %}">ROADMAP</a></li>
+                <li><a href="{% url 'contacts' %}">CONTACT US</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <center>
+        <h1 style="margin-top: 180px;">The Chalcedonian Definition</h1>
+        <p class="subtitle">
+            Therefore, following the holy fathers, we all with one accord teach men to
+            acknowledge one and the same Son, our Lord Jesus Christ, at once complete in Godhead and complete in
+            manhood, truly God and truly man, consisting also of a reasonable soul and body;
+            of one substance with the Father as regards his Godhead, and at the same time of one substance with
+            us as regards his manhood;
+            like us in all respects, apart from sin; as regards his Godhead, begotten of the Father before the
+            ages,
+            but yet as regards his manhood begotten, for us men and for our salvation, of Mary the Virgin,
+            the God-bearer; one and the same Christ, Son, Lord, Only-begotten, recognized in two natures,
+            without confusion, without change, without division, without separation;
+            the distinction of natures being in no way annulled by the union, but rather the characteristics of
+            each nature being preserved and coming together to form one person and subsistence,
+            not as parted or separated into two persons, but one and the same Son and Only-begotten God the
+            Word, Lord Jesus Christ; even as the prophets from earliest times spoke of him,
+            and our Lord Jesus Christ himself taught us, and the creed of the fathers has handed down to us.
+        </p>
+    </center>
+
+    <center>
+        <h1 style="margin-top: 100px;">The Nicene Creed</h1>
+        <p class="subtitle">
+            We believe in one God, the Father Almighty, the maker of heaven and earth, of things visible and invisible.
+            And in one Lord Jesus Christ, the Son of God, the begotten of God the Father, the Only-begotten, that is of
+            the substance of the Father.
+            God of God, Light of Light, true God of true God, begotten and not made; of the very same nature of the
+            Father, by Whom all things came into being, in heaven and on earth, visible and invisible.
+            Who for us humanity and for our salvation came down from heaven, was incarnate, became human, was born
+            perfectly of the holy virgin Mary by the Holy Spirit.
+            By whom He took body, soul, and mind, and everything that is in man, truly and not in semblance.
+            He suffered, was crucified, was buried, rose again on the third day, ascended into heaven with the same
+            body, [and] sat at the right hand of the Father.
+            He is to come with the same body and with the glory of the Father, to judge the living and the dead; of His
+            kingdom there is no end.
+            We believe in the Holy Spirit, the uncreate and the perfect; Who spoke through the Law, the prophets, and
+            the Gospels;
+            Who came down upon the Jordan, preached through the apostles, and lived in the saints.
+            We believe also in only One, Universal, Apostolic, and [Holy] Church; in one baptism with repentance for the
+            remission and forgiveness of sins;
+            and in the resurrection of the dead, in the everlasting judgement of souls and bodies, in the Kingdom of
+            Heaven and in the everlasting life
+        </p>
+    </center>
+
+    <footer class="footer-t">
+        <div class="container-footer">
+            <div class="footer-row">
+                <div class="footer-col">
+                    <h4>TEC</h4>
+                    <ul>
+                        <li><a href="{% url 'about' %}">About TEC</a></li>
+                        <li><a href="{% url 'contacts' %}">Contact Us</a></li>
+                        <li><a href="{% url 'give' %}">Give</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Learn More</h4>
+                    <ul>
+                        <li><a href="{% url 'roadmap' %}">Roadmap</a></li>
+                        <li><a href="{% url 'resource' %}">Resource Center</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Keep Up</h4>
+                    <ul>
+                        <li><a href="https://t.me/tec_media">Telegram</a></li>
+                        <li><a href="https://thisexcellentchurch.mixlr.com">Mixlr</a></li>
+                        <li><a href="https://www.youtube.com/@thisexcellentchurch">YouTube</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/thisexcellentchurch/"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

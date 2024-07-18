@@ -1,0 +1,210 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="stylesheet" href="{% static 'about.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <title>This Excellent Church</title>
+</head>
+
+<body class="full-height-grow">
+    <div class="container full-height-grow">
+        <nav>
+            <div class="nav__content">
+                <div class="logo"><a href="/"><img src="{% static 'assets\logo.png' %}" alt=""></a></div>
+                <label for="check" class="checkbox">
+                    <i class="ri-menu-line"></i>
+                </label>
+                <input type="checkbox" name="check" id="check" />
+                <ul>
+                    <li><a href="{% url 'about' %}">ABOUT TEC</a></li>
+                    <li><a href="{% url 'resource' %}">RESOURCE CENTER</a></li>
+                    <li><a href="{% url 'roadmap' %}">ROADMAP</a></li>
+                    <li><a href="{% url 'contacts' %}">CONTACT US</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div id="title-we">
+            <span>Who are </span>
+            <span class="gray-text">We<span id="not-gray">?</span></span>
+        </div>
+        <section class="home-main-section" id="main-sec">
+            <div class="call-to-action">
+                <h1 class="title">About Us</h1>
+                <span class="subtitle-i">We are an evangelical charismatic church that affirms that salvation is by
+                    grace alone, through faith alone, in Christ alone, as revealed by scripture alone to the glory of
+                    God alone.
+                </span>
+            </div>
+            <div class="img-wrapper" id="img-tst">
+                <div class="globe-img">
+                    <img src="{% static 'assets\Rectangle_3320.png' %}" alt="" class="responsive-img">
+                </div>
+            </div>
+        </section>
+        <section class="home-main-section separate" id="main-sec">
+            <div class="img-wrapper" id="img-tst">
+                <div class="globe-img">
+                    <img src="{% static 'assets\Rectangle_3322.png' %}" alt="" class="responsive-img">
+                </div>
+            </div>
+            <div class="call-to-action">
+                <h1 class="title">Our Mission</h1>
+                <span class="subtitle-ii">To reshape men’s values and reconcile them back to God
+                </span>
+                <span class="subtitle-iix">
+                    Our core values are - Love, Faith, Purity, Scholarship and Beauty.
+                </span>
+            </div>
+        </section>
+        <section class="home-main-section" id="main-sec">
+            <div class="call-to-action" id="call-xyz">
+                <h1 class="title">Our Creeds</h1>
+                <span class="subtitle-iii">We affirm the <a class="reg-link" href="{% url 'creeds' %}">Nicene Creed and
+                        The Chalcedonian definition.</a>
+                </span>
+            </div>
+            <div class="img-wrapper" id="img-tst">
+                <div class="globe-img">
+                    <img src="{% static 'assets\Rectangle_3324.png' %}" alt="" class="responsive-img">
+                </div>
+            </div>
+        </section>
+        <div class="home-page-art-1"></div>
+        <div class="home-page-art-2"></div>
+        <div class="home-page-art-3"></div>
+        <div id="img-art-1">
+            <img src="" alt="" class="img-slide" id="img-s">
+        </div>
+
+        <div class="big-titles">
+            <span>Meet The </span>
+            <span class="gray-text">Elders</span>
+        </div>
+
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <div class="profile-pic">
+                        <img src="{% static 'assets\Ellipse_6.png' %}" alt="Jane" style="width:100%">
+                    </div>
+                    <div class="container">
+                        <h2>Sam Oyeyinka </h2>
+                        <p class="">(Elder)</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column-x">
+                <div class="card">
+                    <div class="profile-pic">
+                        <img src="{% static 'assets\Ellipse_10.png' %}" alt="Jane" style="width:100%">
+                    </div>
+                    <div class="container">
+                        <h2>Seye Majofodunmi</h2>
+                        <p class=""> (Elder)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="big-titles">
+        <span>Meet The </span>
+        <span class="gray-text">Deacons</span>
+    </div>
+    <div class="row">
+        <div class="column-x">
+            <div class="card">
+                <div class="profile-pic">
+                    <img src="{% static 'assets/murewa.JPG'%}" alt="Jane" style="width:100%">
+                </div>
+                <div class="container">
+                    <h2>Brother Murewa </h2>
+                    <p class="">(Deacon)</p>
+                </div>
+            </div>
+        </div>
+        <div class="column-x">
+            <div class="card">
+                <div class="profile-pic">
+                    <img src="{% static 'assets/ifeanyi.JPG'%}" alt="Jane" style="width:100%">
+                </div>
+                <div class="container">
+                    <h2>Ifeanyi Majofodunmi</h2>
+                    <p class="">(Deacon)</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="column-x">
+            <div class="card">
+                <div class="profile-pic">
+                    <img src="{% static 'assets\Ellipse_9.png' %}" alt="Jane" style="width:100%">
+                </div>
+                <div class="container">
+                    <h2>Ijeoma Oyeyinka</h2>
+                    <p class="">(Deacon)</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="column-x">
+            <div class="card">
+                <div class="profile-pic">
+                    <img src="{% static 'assets/kingsley.JPG'%}" alt="Jane" style="width:100%">
+                </div>
+                <div class="container">
+                    <h2>Brother Kingsley</h2>
+                    <p class="">(Deacon)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <footer class="footer-t">
+        <div class="container-footer">
+            <div class="footer-row">
+                <div class="footer-col">
+                    <h4>TEC</h4>
+                    <ul>
+                        <li><a href="{% url 'about' %}">About TEC</a></li>
+                        <li><a href="{% url 'contacts' %}">Contact Us</a></li>
+                        <li><a href="{% url 'give' %}">Give</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Learn More</h4>
+                    <ul>
+                        <li><a href="{% url 'roadmap' %}">Roadmap</a></li>
+                        <li><a href="{% url 'resource' %}">Resource Center</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Keep Up</h4>
+                    <ul>
+                        <li><a href="https://t.me/tec_media">Telegram</a></li>
+                        <li><a href="https://thisexcellentchurch.mixlr.com">Mixlr</a></li>
+                        <li><a href="https://www.youtube.com/@thisexcellentchurch">YouTube</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/thisexcellentchurch/"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,221 @@
+nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    z-index: 99;
+}
+
+.nav__content {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 1.5rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .logo a {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1f2937;
+    transition: 0.3s;
+}
+
+nav .logo a:hover {
+    color: var(--primary-color-dark);
+}
+
+nav .checkbox {
+    display: none;
+}
+
+nav input {
+    display: none;
+}
+
+nav .checkbox i {
+    font-size: 2rem;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+    transition: left 0.3s;
+}
+
+ul li a {
+    padding: 0.5rem 1rem;
+    border: 2px solid transparent;
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--text-dark);
+    transition: 0.3s;
+}
+
+ul li a:hover {
+    border-top-color: var(--secondary-color);
+
+    border-top-color: gray;
+    border-bottom-color: gray;
+    color: gray;
+
+}
+
+.card-contact {
+    width: 700px;
+    height: auto;
+    border: 1px solid #ededed;
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    border-radius: 4px;
+    background: #fff;
+    box-shadow: 0px 0px 5px #D4D4D4;
+    margin-top: 200px;
+}
+
+.card-header {
+    width: 100%;
+    height: auto;
+    padding-top: 10px;
+    display: inline-block;
+    padding-bottom: 10px;
+    text-align: center;
+    margin-left: -10px;
+    padding-right: 20px;
+    margin-top: -10px;
+    border-bottom: 1px solid #ededed;
+}
+
+.card-body {
+    width: 100%;
+    height: auto;
+    padding-top: 10px;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.avatar {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    border: 1px solid #ededed;
+}
+
+.title {
+    font-weight: 300;
+    margin-bottom: 0;
+}
+
+.subtitle {
+    color: #B3B3B3;
+    font-weight: 300;
+}
+
+.container {
+    margin: 10px;
+}
+
+.lefty {
+    float: left;
+}
+
+ul.tabs {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-align: center;
+}
+
+ul.tabs li {
+    background: none;
+    color: #222;
+    display: inline-block;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin: 5px;
+    border-bottom: 1px solid #d0d0d0;
+}
+
+.tab-content {
+    display: none;
+    background: #fff;
+    padding: 15px;
+}
+
+.tab-content.current {
+    display: inherit;
+}
+
+span#cont-span {
+    font-size: 10pt;
+}
+
+@media screen and (max-width: 1000px) {
+    .card-contact {
+        width: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        box-shadow: none;
+    }
+
+    ul.tabs li {
+        font-size: 10pt;
+    }
+
+    #cont-span {
+        font-size: 10pt;
+    }
+}
+
+
+@media (width < 770px) {
+    nav .checkbox {
+        display: block;
+    }
+
+    nav ul {
+        position: absolute;
+        width: 100%;
+        height: calc(100vh - 85px);
+        left: -100%;
+        top: 85px;
+        background-color: white;
+        flex-direction: column;
+        justify-content: center;
+        gap: 3rem;
+    }
+
+    nav #check:checked~ul {
+        left: 0;
+    }
+
+    nav ul li a {
+        font-size: 1.25rem;
+    }
+
+
+}
+
+.account {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    background-color: blue;
+}
+
+#act-tab {
+    display: flex;
+    flex-direction: column;
+}

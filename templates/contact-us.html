@@ -1,0 +1,73 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="stylesheet" href="{% static 'contact-us.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <title>Travelture</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <script src="{% static 'contact-us.js' %}"></script>
+    <nav>
+        <div class="nav__content">
+            <div class="logo"><a href="/"><img src="{% static 'assets\logo.png' %}" alt=""></a></div>
+            <label for="check" class="checkbox">
+                <i class="ri-menu-line"></i>
+            </label>
+            <input type="checkbox" name="check" id="check" />
+            <ul>
+                <li><a href="{% url 'about' %}">ABOUT TEC</a></li>
+                <li><a href="{% url 'resource' %}">RESOURCE CENTER</a></li>
+                <li><a href="{% url 'roadmap' %}">ROADMAP</a></li>
+                <li><a href="{% url 'contacts' %}">CONTACT US</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="card-contact">
+        <div class="container">
+            <div class="card-header">
+                <h2 class="">Contact Us</h2>
+                <span class="subtitle">We would love to hear from you!</span>
+            </div>
+            <div class="card-body">
+                <ul class="tabs">
+                    <li class="tab-link current" data-tab="tab-1">Location</li>
+                    <li class="tab-link" data-tab="tab-2">Catch up</li>
+                    <li class="tab-link" data-tab="tab-3">Social</li>
+                    <li class="tab-link" data-tab="tab-4">E-mail</li>
+                </ul>
+
+                <div id="tab-1" class="tab-content current">
+                    We meet onsite at 2nd Floor, Rikaz Plaza,58, Opebi Road, Ikeja, Lagos. We hangout online at (all
+                    social media account)
+                </div>
+                <div id="tab-2" class="tab-content">
+                    Links: <a href="https://thisexcellentchurch.mixlr.com">Mixlr</a>, <a
+                        href="https://t.me/tec_media">Telegram</a>, <a
+                        href="https://www.youtube.com/@thisexcellentchurch">YouTube</a>
+                </div>
+                <div id="tab-3" class="tab-content">
+                    Links: <a href="#">Website</a>, <a
+                        href="https://www.instagram.com/thisexcellentchurch/">Instagram</a>, <a href="">Twitter</a>
+                </div>
+                <div id="tab-4" class="tab-content">
+                    <span style="text-align: center; border-bottom: 4px dashed #080808;"
+                        id="cont-span">support@thisexcellentchurch.org</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

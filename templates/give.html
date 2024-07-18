@@ -1,0 +1,51 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="stylesheet" href="{% static 'give.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <title>This Excellent Church</title>
+</head>
+
+<body class="full-height-grow">
+    <div class="container full-height-grow">
+        <nav>
+            <div class="nav__content">
+                <div class="logo"><a href="/"><img src="{% static 'assets\logo.png' %}" alt=""></a></div>
+                <label for="check" class="checkbox">
+                    <i class="ri-menu-line"></i>
+                </label>
+                <input type="checkbox" name="check" id="check" />
+                <ul>
+                    <li><a href="{% url 'about' %}">ABOUT TEC</a></li>
+                    <li><a href="{% url 'resource' %}">RESOURCE CENTER</a></li>
+                    <li><a href="{% url 'roadmap' %}">ROADMAP</a></li>
+                    <li><a href="{% url 'contacts' %}">CONTACT US</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="card-contact">
+            <div class="container">
+                <div class="card-header">
+                    <h2 class="">Church Account</h2>
+                </div>
+                <div class="card-body">
+                    <div id="act-tab" class="tab-content current">
+                        <h3>Account Number: 1217858534</h3>
+                        <h3>Account Name: Phos Anthropos Global Ministry</h3>
+                        <h3>Bank Name: Zenith Bank</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
