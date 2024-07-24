@@ -1,0 +1,7 @@
+version: "3.8"
+
+services:
+  tec-website:
+    build: .
+    ports:
+      - 8300:8000
