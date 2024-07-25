@@ -16,6 +16,16 @@ Run the following lines of code
 ```bash
   pip install -r requirements.txt
 ```
+
+# Run on Docker
+* Docker needs to be setup on your computer before running the command below.
+```bash
+  docker-compose up -d
+```
+* Navigate to your browser [tec-website]('http://localhost:8300')
+
+* Refresh the page after template changes. [Empty cache and hard reload]('https://www.contractsafe.com/support/how-to-clear-your-browser-cache-and-hard-refresh') if your old changes persist.
+
 # Manual deployment steps
 
 Step 1: Make your local changes, then build and push the docker image to docker hub
