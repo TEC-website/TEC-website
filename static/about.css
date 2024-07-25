@@ -557,4 +557,5 @@ ul li a:hover {
   all: unset;
   color: darkgray;
   text-decoration: underline;
+  cursor: pointer;
 }
