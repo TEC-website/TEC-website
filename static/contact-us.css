@@ -58,15 +58,6 @@ ul li a {
   transition: 0.3s;
 }
 
-ul li a:hover {
-  border-top-color: var(--secondary-color);
-
-  border-top-color: gray;
-  border-bottom-color: gray;
-  color: gray;
-
-}
-
 .card-contact {
   width: 700px;
   height: auto;
@@ -141,7 +132,14 @@ ul.tabs li {
   padding: 10px 15px;
   cursor: pointer;
   margin: 5px;
-  border-bottom: 1px solid #d0d0d0;
+  border-bottom: 1px solid gray;
+}
+
+ul.tabs li:hover,
+ul.tabs li:focus,
+ul.tabs li:active {
+  border-bottom: 1px solid gray;
+  border-top: 1px solid gray;
 }
 
 .tab-content {
@@ -151,7 +149,10 @@ ul.tabs li {
 }
 
 .tab-content.current {
-  display: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
 }
 
 span#cont-span {
@@ -203,4 +204,10 @@ span#cont-span {
   }
 
 
+}
+
+.contact-link {
+  display: flex;
+  gap: 4px;
+  align-items: center;
 }
