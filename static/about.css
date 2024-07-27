@@ -6,6 +6,7 @@
   justify-content: space-between;
   flex-grow: 1;
   padding-bottom: 40px;
+  gap: 35px;
 }
 
 .home-main-section .img-wrapper {
@@ -14,7 +15,6 @@
   display: flex;
   align-items: stretch;
   justify-content: flex-end;
-  width: 672.46px;
   height: 465.44px;
 
 }
@@ -45,6 +45,7 @@
     flex-direction: column-reverse;
     justify-content: space-between;
     padding-bottom: 120px;
+    margin-bottom: 120px;
   }
 
   .home-main-section .img-wrapper {
@@ -73,7 +74,8 @@
   .separate {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    margin-bottom: 0;
   }
 
   .separate .img-wrapper {
@@ -95,8 +97,8 @@
 
   }
 
-  .separate {
-    justify-content: center;
+  .last-child-section {
+    margin-bottom: 0;
   }
 }
 
