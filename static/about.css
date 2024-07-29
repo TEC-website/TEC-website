@@ -39,6 +39,12 @@
   align-self: center;
 }
 
+@media (min-width: 900px) {
+  .about_tec_1 {
+    margin-bottom: 120px;
+  }
+}
+
 @media (max-width: 900px) {
   .home-main-section {
     display: flex;
