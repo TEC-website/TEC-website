@@ -438,6 +438,10 @@ ul li a:hover {
     width: fit-content;
     width: auto;
   }
+
+  .nav-padding {
+    padding-top: 24px;
+  }
 }
 
 
@@ -516,4 +520,10 @@ ul li a:hover {
 
 .sticky+.tabs-content {
   padding-top: 160px;
+}
+
+@media (min-width: 900px) {
+  .nav-padding {
+    padding: 2.2rem;
+  }
 }

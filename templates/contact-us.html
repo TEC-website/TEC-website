@@ -17,10 +17,11 @@
 
 </head>
 
-<body>
+<body class="full-height-grow">
     <script src="{% static 'contact-us.js' %}"></script>
-    <nav>
-        <div class="nav__content">
+    <div class="container full-height-grow">
+        <nav>
+        <div class="nav-margin nav__content">
             <div class="logo"><a href="/"><img src="{% static 'assets\logo.png' %}" alt=""></a></div>
             <label for="check" class="checkbox">
                 <i class="ri-menu-line"></i>
@@ -45,17 +46,17 @@
                     <li class="tab-link current" data-tab="tab-1">Location</li>
                     <li class="tab-link" data-tab="tab-2">Catch up</li>
                     <li class="tab-link" data-tab="tab-3">Social</li>
-                    <li class="tab-link">
+                    <li class="tab-link" data-tab="tab-3">
                         <a href="mailto:support@thisexcellentchurch.org" target="_blank">Email</a>
                     </li>
                 </ul>
 
-                <div style="text-align: center; flex-direction: column;" id="tab-1" class="tab-content current contact-content">
+                <div style="text-align: center; flex-direction: column;" id="tab-1" class="tab-content current">
                     <span>We meet onsite at 2nd Floor, Rikaz Plaza, 58, Opebi Road, Ikeja, Lagos. We hangout online at (all
                     social media account)</span>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.467470020143!2d3.359118374993532!3d6.5886691934049795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b9240310893f1%3A0x4b795c8e91f87dc!2sRIKAZ%20Shopping%20Plaza!5e0!3m2!1sen!2sng!4v1722083106274!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe title="google_map_location" width="400" height="400" style="border:0;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.467470020143!2d3.359118374993532!3d6.5886691934049795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b9240310893f1%3A0x4b795c8e91f87dc!2sRIKAZ%20Shopping%20Plaza!5e0!3m2!1sen!2sng!4v1722083106274!5m2!1sen!2sng" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-                <div id="tab-2" class="tab-content contact-content">
+                <div id="tab-2" class="tab-content">
                     <a class="contact-link" href="https://thisexcellentchurch.mixlr.com" target="_blank">
                         <svg 
    xmlns:dc="http://purl.org/dc/elements/1.1/"
@@ -159,7 +160,7 @@
                         <span>YouTube</span>
                     </a>
                 </div>
-                <div id="tab-3" class="tab-content contact-content">
+                <div id="tab-3" class="tab-content">
                     <a class="contact-link" href="https://thisexcellentchurch.org">
                         <svg width="30" height="30" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" stroke-width="3" stroke="#000000" fill="none"><path d="M39.93,55.72A24.86,24.86,0,1,1,56.86,32.15a37.24,37.24,0,0,1-.73,6"/><path d="M37.86,51.1A47,47,0,0,1,32,56.7"/><path d="M32,7A34.14,34.14,0,0,1,43.57,30a34.07,34.07,0,0,1,.09,4.85"/><path d="M32,7A34.09,34.09,0,0,0,20.31,32.46c0,16.2,7.28,21,11.66,24.24"/><line x1="10.37" y1="19.9" x2="53.75" y2="19.9"/><line x1="32" y1="6.99" x2="32" y2="56.7"/><line x1="11.05" y1="45.48" x2="37.04" y2="45.48"/><line x1="7.14" y1="32.46" x2="56.86" y2="31.85"/><path d="M53.57,57,58,52.56l-8-8,4.55-2.91a.38.38,0,0,0-.12-.7L39.14,37.37a.39.39,0,0,0-.46.46L42,53.41a.39.39,0,0,0,.71.13L45.57,49Z"/></svg>
                         <span>Website</span>
@@ -180,6 +181,6 @@
             </div>
         </div>
     </div>
+    </div>
 </body>
-
 </html>

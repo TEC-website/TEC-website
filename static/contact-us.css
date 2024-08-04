@@ -211,3 +211,9 @@ span#cont-span {
   gap: 4px;
   align-items: center;
 }
+
+@media (min-width: 900px) {
+  .nav-margin {
+    margin: 0 117px;
+  }
+}
