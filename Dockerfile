@@ -8,8 +8,8 @@ COPY . /app
 
 RUN pip install --no-cache-dir -r requirements.txt
 
-ENV DJANGO_ALLOWED_HOSTS thisexcellentchurch.org
-ENV DEBUG False
+ENV DJANGO_ALLOWED_HOSTS=*
+ENV DEBUG=True
 
 # Run migrations and collect static files
 RUN python manage.py migrate

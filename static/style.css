@@ -223,7 +223,6 @@ body {
         display: flex;
         flex-direction: column;
         width: fit-content;
-        width: min-content;
     }
 }
 
