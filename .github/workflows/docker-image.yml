@@ -39,7 +39,7 @@ jobs:
           PORT=8000
           CONTAINER_NAME=tec-web
         elif [ "${BRANCH_NAME}" == "dev" ]; then
-          PORT=8001
+          PORT=8008
           CONTAINER_NAME=tec-web-dev
         fi
 
