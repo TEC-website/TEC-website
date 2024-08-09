@@ -44,7 +44,7 @@ jobs:
         fi
 
         sshpass -p "${SSH_PASSWORD}" ssh -o StrictHostKeyChecking=no $SSH_USERNAME@$SSH_HOST << EOF
-          sudo docker pull $IMAGE_NAME
+          sudo docker pull ${{ secrets.DOCKER_USERNAME }}/tec-web:${{ github.sha }}
           sudo docker stop $CONTAINER_NAME || true
           sudo docker rm $CONTAINER_NAME || true
           sudo docker run -d --name $CONTAINER_NAME -p $PORT:8000 $IMAGE_NAME
