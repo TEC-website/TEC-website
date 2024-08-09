@@ -47,5 +47,5 @@ jobs:
           sudo docker pull ${{ secrets.DOCKER_USERNAME }}/tec-web:${{ github.sha }}
           sudo docker stop $CONTAINER_NAME || true
           sudo docker rm $CONTAINER_NAME || true
-          sudo docker run -d --name $CONTAINER_NAME -p $PORT:8000 $IMAGE_NAME
+          sudo docker run -d --name $CONTAINER_NAME -p $PORT:8000 ${{ secrets.DOCKER_USERNAME }}/tec-web:${{ github.sha }}
         EOF
