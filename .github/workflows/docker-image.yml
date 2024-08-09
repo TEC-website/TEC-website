@@ -27,6 +27,11 @@ jobs:
       run: |
         docker build -t ${{ secrets.DOCKER_USERNAME }}/tec-web:${{ github.sha }} .
         docker push ${{ secrets.DOCKER_USERNAME }}/tec-web:${{ github.sha }}
+    - name: Build and push Docker image
+      run: |
+        IMAGE_NAME=ghcr.io/${{ github.repository_owner }}/tec-web:${{ github.sha }}
+        docker build -t $IMAGE_NAME .
+        docker push $IMAGE_NAME
 
     - name: Deploy to VM
       env:
@@ -44,8 +49,8 @@ jobs:
         fi
 
         sshpass -p "${SSH_PASSWORD}" ssh -o StrictHostKeyChecking=no $SSH_USERNAME@$SSH_HOST << EOF
-          docker pull $IMAGE_NAME
-          docker stop $CONTAINER_NAME || true
-          docker rm $CONTAINER_NAME || true
-          docker run -d --name $CONTAINER_NAME -p $PORT:8000 $IMAGE_NAME
+          sudo docker pull $IMAGE_NAME
+          sudo docker stop $CONTAINER_NAME || true
+          sudo docker rm $CONTAINER_NAME || true
+          sudo docker run -d --name $CONTAINER_NAME -p $PORT:8000 $IMAGE_NAME
         EOF
