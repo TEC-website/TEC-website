@@ -35,7 +35,7 @@ jobs:
       run: |
         if [ "${{ github.ref_name }}" == "main" ]; then
           echo "ENVIRONMENT=production" >> .env.production
-          echo "ALLOWED_HOSTS=*" >> .env.production
+          echo "DJANGO_ALLOWED_HOSTS=*" >> .env.production
           echo "DB_NAME=${{ secrets.DB_NAME }}" >> .env.production
           echo "DB_PORT=${{ secrets.DB_PORT }}" >> .env.production
           echo "DB_HOST=${{ secrets.DB_HOST }}" >> .env.production
@@ -43,7 +43,7 @@ jobs:
           echo "DB_USER=${{ secrets.DB_USER }}" >> .env.production
         elif [ "${{ github.ref_name }}" == "dev" ]; then
           echo "ENVIRONMENT=development" >> .env.development
-          echo "ALLOWED_HOSTS=*" >> .env.development
+          echo "DJANGO_ALLOWED_HOSTS=*" >> .env.development
           echo "DB_NAME=${{ secrets.DB_NAME }}" >> .env.development
           echo "DB_PORT=${{ secrets.DB_PORT }}" >> .env.development
           echo "DB_HOST=${{ secrets.DB_HOST }}" >> .env.development
