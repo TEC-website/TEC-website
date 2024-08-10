@@ -25,18 +25,23 @@ jobs:
 
     - name: Build and push Docker image
       run: |
-        docker build -t ${{ secrets.DOCKER_USERNAME }}/tec-web:${{ github.sha }} .
-        docker push ${{ secrets.DOCKER_USERNAME }}/tec-web:${{ github.sha }}
+        IMAGE_NAME=${{ secrets.DOCKER_USERNAME }}/tec-web:${{ github.sha }}
+        docker build -t $IMAGE_NAME .
+        docker push $IMAGE_NAME
         
     - name: Set up environment files
       run: |
         if [ "${{ github.ref_name }}" == "main" ]; then
+          echo "ENVIRONMENT=production" >> .env.production
+          echo "ALLOWED_HOSTS=*" >> .env.production
           echo "DB_NAME=${{ secrets.DB_NAME }}" >> .env.production
           echo "DB_PORT=${{ secrets.DB_PORT }}" >> .env.production
           echo "DB_HOST=${{ secrets.DB_HOST }}" >> .env.production
           echo "DB_PASS=${{ secrets.DB_PASS }}" >> .env.production
           echo "DB_USER=${{ secrets.DB_USER }}" >> .env.production
         elif [ "${{ github.ref_name }}" == "dev" ]; then
+          echo "ENVIRONMENT=development" >> .env.development
+          echo "ALLOWED_HOSTS=*" >> .env.development
           echo "DB_NAME=${{ secrets.DB_NAME }}" >> .env.development
           echo "DB_PORT=${{ secrets.DB_PORT }}" >> .env.development
           echo "DB_HOST=${{ secrets.DB_HOST }}" >> .env.development
@@ -68,14 +73,18 @@ jobs:
         if [ "${BRANCH_NAME}" == "main" ]; then
           PORT=8000
           CONTAINER_NAME=tec-web
+          ENV_FILE=".env.production"
         elif [ "${BRANCH_NAME}" == "dev" ]; then
           PORT=8008
           CONTAINER_NAME=tec-web-dev
+          ENV_FILE=".env.development"
         fi
-
+        
+        IMAGE_NAME=${{ secrets.DOCKER_USERNAME }}/tec-web:${{ github.sha }}
+        
         sshpass -p "${SSH_PASSWORD}" ssh -o StrictHostKeyChecking=no $SSH_USERNAME@$SSH_HOST << EOF
-          sudo docker pull ${{ secrets.DOCKER_USERNAME }}/tec-web:${{ github.sha }}
+          sudo docker pull $IMAGE_NAME
           sudo docker stop $CONTAINER_NAME || true
           sudo docker rm $CONTAINER_NAME || true
-          sudo docker run -d --name $CONTAINER_NAME -p $PORT:8000 ${{ secrets.DOCKER_USERNAME }}/tec-web:${{ github.sha }}
+          sudo docker run -d --env-file /home/alwyzon/$ENV_FILE --name $CONTAINER_NAME -p $PORT:8000 $IMAGE_NAME
         EOF
