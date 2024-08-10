@@ -27,6 +27,36 @@ jobs:
       run: |
         docker build -t ${{ secrets.DOCKER_USERNAME }}/tec-web:${{ github.sha }} .
         docker push ${{ secrets.DOCKER_USERNAME }}/tec-web:${{ github.sha }}
+        
+    - name: Set up environment files
+      run: |
+        if [ "${{ github.ref_name }}" == "main" ]; then
+          echo "DB_NAME=${{ secrets.DB_NAME }}" >> .env.production
+          echo "DB_PORT=${{ secrets.DB_PORT }}" >> .env.production
+          echo "DB_HOST=${{ secrets.DB_HOST }}" >> .env.production
+          echo "DB_PASS=${{ secrets.DB_PASS }}" >> .env.production
+          echo "DB_USER=${{ secrets.DB_USER }}" >> .env.production
+        elif [ "${{ github.ref_name }}" == "dev" ]; then
+          echo "DB_NAME=${{ secrets.DB_NAME }}" >> .env.development
+          echo "DB_PORT=${{ secrets.DB_PORT }}" >> .env.development
+          echo "DB_HOST=${{ secrets.DB_HOST }}" >> .env.development
+          echo "DB_PASS=${{ secrets.DB_PASS }}" >> .env.development
+          echo "DB_USER=${{ secrets.DB_USER }}" >> .env.development
+        fi
+
+    - name: Upload environment file to VM
+      env:
+        SSH_HOST: ${{ secrets.SSH_HOST }}
+        SSH_USERNAME: ${{ secrets.SSH_USERNAME }}
+        SSH_PASSWORD: ${{ secrets.SSH_PASSWORD }}
+      run: |
+        if [ "${{ github.ref_name }}" == "main" ]; then
+          ENV_FILE=".env.production"
+        elif [ "${{ github.ref_name }}" == "dev" ]; then
+          ENV_FILE=".env.development"
+        fi
+
+        sshpass -p "${SSH_PASSWORD}" scp -o StrictHostKeyChecking=no $ENV_FILE $SSH_USERNAME@$SSH_HOST:/home/alwyzon/$ENV_FILE
 
     - name: Deploy to VM
       env:
