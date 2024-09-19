@@ -1,159 +1,188 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
-
-https://github.com/TEC-website/TEC-website/pull/1/conflict?name=templates%252Fresource.html&ancestor_oid=cb114d6ba1917992947b6610b65440a23b30c6fd&base_oid=e7615a89860313cbdb182de05103c3a885a7cdbf&head_oid=6ffa042d3534d0058bb9420d53c7fbdf393759a4<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>This Excellent Church</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet" />
-  <link rel="stylesheet" type="text/css"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet" />
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
-  <link rel="stylesheet" href="{% static 'style.css' %}">
-  <link rel="stylesheet" href="{% static 'resources.css' %}">
+<link rel="stylesheet" href="{% static 'style.css' %}">
+<link rel="stylesheet" href="{% static 'resources.css' %}">
 
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"
     integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-  <script>
+
+<title>This Excellent Church ・ Resource</title>
+<description>Reshaping men’s values and reconciling them back to God</description>
+
+<meta name="robots" content="index,follow" />
+
+<!-- Favicon tags -->
+<link rel="icon" type="image/x-icon" href="{% static '/favicon.ico' %}">
+<link rel="shortcut icon" type="image/x-icon" href="{% static '/favicon-32x32.png' %}" />
+<link rel="icon" type="image/png" sizes="32x32" href="{% static '/favicon-32x32.png' %}" />
+<link rel="icon" type="image/png" sizes="16x16" href="{% static '/favicon-16x16.png' %}" />
+<link rel="apple-touch-icon" sizes="180x180" href="{% static '/apple-touch-icon.png' %}" />
+<link rel="manifest" href="{% static '/site.webmanifest' %}" />
+<link rel="mask-icon" href="{% static '/safari-pinned-tab.svg' %}" color="#5bbad5" />
+<meta name="theme-color" content="#7b46f6" />
+
+<!-- Open Graph tags -->
+<meta property="og:title" content="This Excellent Church" />
+<meta property="og:description" content="Reshaping men’s values and reconciling them back to God" />
+<meta property="og:url" content="https://thisexcellentchurch.org" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="https://thisexcellentchurch.org/static/assets/og-image.jpg" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:site_name" content="This Excellent Church" />
+
+<!-- Twitter Card tags -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@thisexcellentch" />
+
+<!-- Canonical URL -->
+<link rel="canonical" href="thisexcellentchurch.org" />
+
+<script>
     $(document).ready(function () {
-      //  showing the clicked tab
-      $('.tabs-control a').click(function () {
-        $('.tabs-control a').removeClass('active');
-        $(this).addClass('active');
+        //  showing the clicked tab
+        $('.tabs-control a').click(function () {
+            $('.tabs-control a').removeClass('active');
+            $(this).addClass('active');
 
-        let currentTab = $(this).attr('href');
-        $('.box').hide();
-        $(currentTab).fadeIn();
+            let currentTab = $(this).attr('href');
+            $('.box').hide();
+            $(currentTab).fadeIn();
 
-        // saving current tab to local storage
-        let index = $(this).index();
-        localStorage.setItem('currentTab', index);
-      });
+            // saving current tab to local storage
+            let index = $(this).index();
+            localStorage.setItem('currentTab', index);
+        });
 
-      //  getting last current tab from storage
-      let getTab = localStorage.getItem('currentTab');
-      getTab = 0;
-      $('.tabs-control a').eq(getTab).addClass('active');
-      $('.box').eq(getTab).show();
-      //location.reload()
+        //  getting last current tab from storage
+        let getTab = localStorage.getItem('currentTab');
+        getTab = 0;
+        $('.tabs-control a').eq(getTab).addClass('active');
+        $('.box').eq(getTab).show();
+        //location.reload()
     });
-  </script>
+</script>
 
-  <nav class="nav-padding">
+<nav class="nav-padding">
     <div class="nav__content">
-      <div class="logo"><a href="/"><img src="{% static 'assets\logo.png' %}" alt=""></a></div>
-      <label for="check" class="checkbox">
-        <i class="ri-menu-line"></i>
-      </label>
-      <input type="checkbox" name="check" id="check" />
-      <ul>
-        <li><a href="{% url 'about' %}">ABOUT TEC</a></li>
-        <li><a href="{% url 'resource' %}">RESOURCE CENTER</a></li>
-        <li><a href="{% url 'roadmap' %}">ROADMAP</a></li>
-        <li><a href="{% url 'contacts' %}">CONTACT US</a></li>
-      </ul>
+        <div class="logo"><a href="/"><img src="{% static 'assets\logo.png' %}" alt=""></a></div>
+        <label for="check" class="checkbox">
+            <i class="ri-menu-line"></i>
+        </label>
+        <input type="checkbox" name="check" id="check" />
+        <ul>
+            <li><a href="{% url 'about' %}">ABOUT TEC</a></li>
+            <li><a href="{% url 'resource' %}">RESOURCE CENTER</a></li>
+            <li><a href="{% url 'roadmap' %}">ROADMAP</a></li>
+            <li><a href="{% url 'contacts' %}">CONTACT US</a></li>
+        </ul>
     </div>
-  </nav>
-  <div class="fixed-header" id="fixed-headery">
+</nav>
+<div class="fixed-header" id="fixed-headery">
     <div class="container-search">
-      <div class="searchInputWrapper">
-        <input id='mySearch' class="searchInput" type="text" placeholder='Search'>
-        <i class="searchInputIcon fa fa-search"></i>
-        <button id="myBtn"></button>
-        </input>
-      </div>
+        <div class="searchInputWrapper">
+            <input id='mySearch' class="searchInput" type="text" placeholder='Search'>
+            <i class="searchInputIcon fa fa-search"></i>
+            <button id="myBtn"></button>
+            </input>
+        </div>
     </div>
     <div class="tabs-control w-100 bg-#F2F2F2  rounded-top-4 d-flex
   justify-content-start align-items-center">
-      <a href="#tab1" class="py-4 px-5 text-decoration-none text-dark">All</a>
-      <a href="#tab2" class="py-4  px-5 text-decoration-none text-dark">Videos</a>
-      <a href="#tab3" class="py-4  px-5 text-decoration-none text-dark">Podcasts</a>
-      <a href="#tab4" class="py-4  px-5 text-decoration-none text-dark">Articles</a>
+        <a href="#tab1" class="py-4 px-5 text-decoration-none text-dark">All</a>
+        <a href="#tab2" class="py-4  px-5 text-decoration-none text-dark">Videos</a>
+        <a href="#tab3" class="py-4  px-5 text-decoration-none text-dark">Podcasts</a>
+        <a href="#tab4" class="py-4  px-5 text-decoration-none text-dark">Articles</a>
     </div>
-  </div>
+</div>
 
-  <script>
+<script>
     var input = document.getElementById("mySearch");
     // Execute a function when the user presses a key on the keyboard
     input.addEventListener("keypress", function (event) {
-      // If the user presses the "Enter" key on the keyboard
-      if (event.key === "Enter") {
-        // Cancel the default action, if needed
-        // event.preventDefault();
-        // Trigger the button element with a click
-        document.getElementById("myBtn").click();
-      }
+        // If the user presses the "Enter" key on the keyboard
+        if (event.key === "Enter") {
+            // Cancel the default action, if needed
+            // event.preventDefault();
+            // Trigger the button element with a click
+            document.getElementById("myBtn").click();
+        }
     });
-  </script>
+</script>
 </head>
 
 <body class="full-height-grow">
-  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-  <div class="container full-height-grow">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <div class="container full-height-grow">
 
 
-    <div class="section__container">
-      <script src="{% static 'sticky.js' %}"></script>
-      <div class="box" id="tab1">
-        <div class="resource-container content-style">
-          <script src="{% static 'content.js' %}"></script>
+        <div class="section__container">
+            <script src="{% static 'sticky.js' %}"></script>
+            <div class="box" id="tab1">
+                <div class="resource-container content-style">
+                    <script src="{% static 'content.js' %}"></script>
+                </div>
+            </div>
+            <div class="box" id="tab2">
+                <div class="videocontent-container content-style">
+                </div>
+            </div>
+            <div class="box" id="tab3">
+                <div class="podcast-container content-style">
+                </div>
+            </div>
+            <div class="box" id="tab4">
+                <div class="article-container content-style">
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="box" id="tab2">
-        <div class="videocontent-container content-style">
-        </div>
-      </div>
-      <div class="box" id="tab3">
-        <div class="podcast-container content-style">
-        </div>
-      </div>
-      <div class="box" id="tab4">
-        <div class="article-container content-style">
-        </div>
-      </div>
+
     </div>
 
-  </div>
-
-  <footer class="footer-t">
-    <div class="container-footer">
-      <div class="footer-row">
-        <div class="footer-col">
-          <h4>TEC</h4>
-          <ul>
-            <li><a href="{% url 'about' %}">About TEC</a></li>
-            <li><a href="{% url 'contacts' %}">Contact Us</a></li>
-            <li><a href="{% url 'give' %}">Give</a></li>
-          </ul>
+    <footer class="footer-t">
+        <div class="container-footer">
+            <div class="footer-row">
+                <div class="footer-col">
+                    <h4>TEC</h4>
+                    <ul>
+                        <li><a href="{% url 'about' %}">About TEC</a></li>
+                        <li><a href="{% url 'contacts' %}">Contact Us</a></li>
+                        <li><a href="{% url 'give' %}">Give</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Learn More</h4>
+                    <ul>
+                        <li><a href="{% url 'roadmap' %}">Roadmap</a></li>
+                        <li><a href="{% url 'resource' %}">Resource Center</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Keep Up</h4>
+                    <ul>
+                        <li><a href="https://t.me/tec_media" target="_blank">Telegram</a></li>
+                        <li><a href="https://thisexcellentchurch.mixlr.com" target="_blank">Mixlr</a></li>
+                        <li><a href="https://www.youtube.com/@thisexcellentchurch" target="_blank">YouTube</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="https://x.com/thisexcellentch" target="_blank"><i class="fab fa-x-twitter"></i></a>
+                        <a href="https://www.instagram.com/thisexcellentchurch/" target="_blank"><i
+                                class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="footer-col">
-          <h4>Learn More</h4>
-          <ul>
-            <li><a href="{% url 'roadmap' %}">Roadmap</a></li>
-            <li><a href="{% url 'resource' %}">Resource Center</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Keep Up</h4>
-          <ul>
-            <li><a href="https://t.me/tec_media" target="_blank">Telegram</a></li>
-            <li><a href="https://thisexcellentchurch.mixlr.com" target="_blank">Mixlr</a></li>
-            <li><a href="https://www.youtube.com/@thisexcellentchurch" target="_blank">YouTube</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>follow us</h4>
-          <div class="social-links">
-            <a href="https://x.com/thisexcellentch" target="_blank"><i class="fab fa-x-twitter"></i></a>
-            <a href="https://www.instagram.com/thisexcellentchurch/" target="_blank"><i class="fab fa-instagram"></i></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
+    </footer>
 </body>
 
 </html>

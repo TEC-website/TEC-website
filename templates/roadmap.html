@@ -3,146 +3,182 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet" />
-  <link rel="stylesheet" type="text/css"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-  <link rel="stylesheet" href="{% static 'style.css' %}">
-  <link rel="stylesheet" href="{% static 'roadmap.css' %}">
-  <title>This Excellent Church</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="stylesheet" href="{% static 'roadmap.css' %}">
+    <title>This Excellent Church ・ Roadmap</title>
+    <description>Reshaping men’s values and reconciling them back to God</description>
+
+    <meta name="robots" content="index,follow" />
+
+    <!-- Favicon tags -->
+    <link rel="icon" type="image/x-icon" href="{% static '/favicon.ico' %}">
+    <link rel="shortcut icon" type="image/x-icon" href="{% static '/favicon-32x32.png' %}" />
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static '/favicon-32x32.png' %}" />
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static '/favicon-16x16.png' %}" />
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static '/apple-touch-icon.png' %}" />
+    <link rel="manifest" href="{% static '/site.webmanifest' %}" />
+    <link rel="mask-icon" href="{% static '/safari-pinned-tab.svg' %}" color="#5bbad5" />
+    <meta name="theme-color" content="#7b46f6" />
+
+    <!-- Open Graph tags -->
+    <meta property="og:title" content="This Excellent Church" />
+    <meta property="og:description" content="Reshaping men’s values and reconciling them back to God" />
+    <meta property="og:url" content="https://thisexcellentchurch.org" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://thisexcellentchurch.org/static/assets/og-image.jpg" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:site_name" content="This Excellent Church" />
+
+    <!-- Twitter Card tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@thisexcellentch" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="thisexcellentchurch.org" />
 </head>
 
 <body>
-  <nav>
-    <div class="nav__content">
-      <div class="logo"><a href="/"><img src="{% static 'assets\logo.png' %}" alt=""></a></div>
-      <label for="check" class="checkbox">
-        <i class="ri-menu-line"></i>
-      </label>
-      <input type="checkbox" name="check" id="check" />
-      <ul>
-        <li><a href="{% url 'about' %}">ABOUT TEC</a></li>
-        <li><a href="{% url 'resource' %}">RESOURCE CENTER</a></li>
-        <li><a href="{% url 'roadmap' %}">ROADMAP</a></li>
-        <li><a href="{% url 'contacts' %}">CONTACT US</a></li>
-      </ul>
-    </div>
-  </nav>
-  <section class="timeline-body">
-    <h1>Responsive vertical timeline</h1>
-    <div class="timeline">
-      <ul>
-        <li>
-          <div class="content">
-            <h3>Start Here</h3>
-            <p>Salvation series:
-              Facets of our Salvation from part one to part 10. <a class="reg-link"
-                href="https://www.youtube.com/watch?v=AeoHVBkIcjE&list=PLmcdWA2cZUfsUHvpDN1xaWFqjXONj7Tjn&pp=iAQB">Watch
-                the series here!</a>
-            </p>
-          </div>
-          <div class="time">
-            <h4>Journey begins!</h4>
-          </div>
-        </li>
-
-        <li>
-          <div class="content">
-            <h3>Understand more about God</h3>
-            <p>The work of faith series is a good start to learn more about God and the christian walk.
-              <a class="reg-link"
-                href="https://www.youtube.com/watch?v=CMcklLg-88k&list=PLmcdWA2cZUftEGeDhEq8s4TX6_GeCmXXY&pp=iAQB">You
-                can start the series here!</a>
-            </p>
-          </div>
-          <div class="time">
-            <h4>Next checkpoint</h4>
-          </div>
-        </li>
-
-        <li>
-          <div class="content">
-            <h3>Get to know what Jesus did</h3>
-            <p> The facets of our salvation series covers this topic in detail. But, here is an opportunity to recap
-              what you learnt.
-              The essence of righteousness series is a good continuation from that series.
-              <a class="reg-link" href="https://www.youtube.com/watch?v=0ucswm85zYg">You can watch it here </a>
-            </p>
-          </div>
-          <div class="time">
-            <h4>Halfway point!</h4>
-          </div>
-        </li>
-
-        <li>
-          <div class="content">
-            <h3>Why we read the bible</h3>
-            <p>Have questions about the origin of the Bible or why it is so important to christians. <a class="reg-link"
-                href="https://www.youtube.com/watch?v=bw8X1aLavOU">How we got the bible will be a good start</a></p>
-          </div>
-          <div class="time">
-            <h4>Almost there!</h4>
-          </div>
-        </li>
-
-        <li>
-          <div class="content">
-            <h3>What do I do now?</h3>
-            <p>Here are some series that'll help in answering those questions.
-              <a class="reg-link" href="https://www.youtube.com/watch?v=IphvI78Q8E0">Finding purpose(Four parts.)</a>
-              <a class="reg-link" href="https://www.youtube.com/watch?v=KsEq6jl7NxY">How to love what's good for
-                you(Three parts.)</a>
-            </p>
-            <a class="reg-link" href="https://www.youtube.com/watch?v=sux8uXIlDOY">Pillar and ground of truth(Four
-              parts.)</a>
-          </div>
-          <div class="time">
-            <h4>You made it!</h4>
-          </div>
-        </li>
-        <div style="clear:both;"></div>
-      </ul>
-    </div>
-  </section>
-
-  <footer class="footer-t">
-    <div class="container-footer">
-      <div class="footer-row">
-        <div class="footer-col">
-          <h4>TEC</h4>
-          <ul>
-            <li><a href="{% url 'about' %}">About TEC</a></li>
-            <li><a href="{% url 'contacts' %}">Contact Us</a></li>
-            <li><a href="{% url 'give' %}">Give</a></li>
-          </ul>
+    <nav>
+        <div class="nav__content">
+            <div class="logo"><a href="/"><img src="{% static 'assets\logo.png' %}" alt=""></a></div>
+            <label for="check" class="checkbox">
+                <i class="ri-menu-line"></i>
+            </label>
+            <input type="checkbox" name="check" id="check" />
+            <ul>
+                <li><a href="{% url 'about' %}">ABOUT TEC</a></li>
+                <li><a href="{% url 'resource' %}">RESOURCE CENTER</a></li>
+                <li><a href="{% url 'roadmap' %}">ROADMAP</a></li>
+                <li><a href="{% url 'contacts' %}">CONTACT US</a></li>
+            </ul>
         </div>
-        <div class="footer-col">
-          <h4>Learn More</h4>
-          <ul>
-            <li><a href="{% url 'roadmap' %}">Roadmap</a></li>
-            <li><a href="{% url 'resource' %}">Resource Center</a></li>
-          </ul>
+    </nav>
+    <section class="timeline-body">
+        <h1>Responsive vertical timeline</h1>
+        <div class="timeline">
+            <ul>
+                <li>
+                    <div class="content">
+                        <h3>Start Here</h3>
+                        <p>Salvation series:
+                            Facets of our Salvation from part one to part 10. <a class="reg-link"
+                                href="https://www.youtube.com/watch?v=AeoHVBkIcjE&list=PLmcdWA2cZUfsUHvpDN1xaWFqjXONj7Tjn&pp=iAQB">Watch
+                                the series here!</a>
+                        </p>
+                    </div>
+                    <div class="time">
+                        <h4>Journey begins!</h4>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="content">
+                        <h3>Understand more about God</h3>
+                        <p>The work of faith series is a good start to learn more about God and the christian walk.
+                            <a class="reg-link"
+                                href="https://www.youtube.com/watch?v=CMcklLg-88k&list=PLmcdWA2cZUftEGeDhEq8s4TX6_GeCmXXY&pp=iAQB">You
+                                can start the series here!</a>
+                        </p>
+                    </div>
+                    <div class="time">
+                        <h4>Next checkpoint</h4>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="content">
+                        <h3>Get to know what Jesus did</h3>
+                        <p> The facets of our salvation series covers this topic in detail. But, here is an opportunity
+                            to recap
+                            what you learnt.
+                            The essence of righteousness series is a good continuation from that series.
+                            <a class="reg-link" href="https://www.youtube.com/watch?v=0ucswm85zYg">You can watch it here
+                            </a>
+                        </p>
+                    </div>
+                    <div class="time">
+                        <h4>Halfway point!</h4>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="content">
+                        <h3>Why we read the bible</h3>
+                        <p>Have questions about the origin of the Bible or why it is so important to christians. <a
+                                class="reg-link" href="https://www.youtube.com/watch?v=bw8X1aLavOU">How we got the bible
+                                will be a good start</a></p>
+                    </div>
+                    <div class="time">
+                        <h4>Almost there!</h4>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="content">
+                        <h3>What do I do now?</h3>
+                        <p>Here are some series that'll help in answering those questions.
+                            <a class="reg-link" href="https://www.youtube.com/watch?v=IphvI78Q8E0">Finding purpose(Four
+                                parts.)</a>
+                            <a class="reg-link" href="https://www.youtube.com/watch?v=KsEq6jl7NxY">How to love what's
+                                good for
+                                you(Three parts.)</a>
+                        </p>
+                        <a class="reg-link" href="https://www.youtube.com/watch?v=sux8uXIlDOY">Pillar and ground of
+                            truth(Four
+                            parts.)</a>
+                    </div>
+                    <div class="time">
+                        <h4>You made it!</h4>
+                    </div>
+                </li>
+                <div style="clear:both;"></div>
+            </ul>
         </div>
-        <div class="footer-col">
-          <h4>Keep Up</h4>
-          <ul>
-            <li><a href="https://t.me/tec_media" target="_blank">Telegram</a></li>
-            <li><a href="https://thisexcellentchurch.mixlr.com" target="_blank">Mixlr</a></li>
-            <li><a href="https://www.youtube.com/@thisexcellentchurch" target="_blank">YouTube</a></li>
-          </ul>
+    </section>
+
+    <footer class="footer-t">
+        <div class="container-footer">
+            <div class="footer-row">
+                <div class="footer-col">
+                    <h4>TEC</h4>
+                    <ul>
+                        <li><a href="{% url 'about' %}">About TEC</a></li>
+                        <li><a href="{% url 'contacts' %}">Contact Us</a></li>
+                        <li><a href="{% url 'give' %}">Give</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Learn More</h4>
+                    <ul>
+                        <li><a href="{% url 'roadmap' %}">Roadmap</a></li>
+                        <li><a href="{% url 'resource' %}">Resource Center</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Keep Up</h4>
+                    <ul>
+                        <li><a href="https://t.me/tec_media" target="_blank">Telegram</a></li>
+                        <li><a href="https://thisexcellentchurch.mixlr.com" target="_blank">Mixlr</a></li>
+                        <li><a href="https://www.youtube.com/@thisexcellentchurch" target="_blank">YouTube</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="https://x.com/thisexcellentch" target="_blank"><i class="fab fa-x-twitter"></i></a>
+                        <a href="https://www.instagram.com/thisexcellentchurch/" target="_blank"><i
+                                class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="footer-col">
-          <h4>follow us</h4>
-          <div class="social-links">
-            <a href="https://x.com/thisexcellentch" target="_blank"><i class="fab fa-x-twitter"></i></a>
-            <a href="https://www.instagram.com/thisexcellentchurch/" target="_blank"><i class="fab fa-instagram"></i></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
+    </footer>
 </body>
 
 </html>

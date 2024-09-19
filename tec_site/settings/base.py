@@ -39,7 +39,12 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "django_crontab",
     "core",
+]
+
+CRONJOBS = [
+    ("0 * * * *", "django.core.management.call_command", ["fetch_youtube_videos"]),
 ]
 
 MIDDLEWARE = [
@@ -82,8 +87,6 @@ WSGI_APPLICATION = "tec_site.wsgi.application"
 #         'NAME': BASE_DIR / 'db.sqlite3',
 #     }
 # }
-
-
 
 
 # Password validation
