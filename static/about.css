@@ -6,6 +6,7 @@
   justify-content: space-between;
   flex-grow: 1;
   padding-bottom: 40px;
+  gap: 35px;
 }
 
 .home-main-section .img-wrapper {
@@ -14,7 +15,6 @@
   display: flex;
   align-items: stretch;
   justify-content: flex-end;
-  width: 672.46px;
   height: 465.44px;
 
 }
@@ -34,13 +34,15 @@
 .home-main-section .call-to-action {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  margin: 2rem;
+  align-items: center;
+  margin-top: 2rem;
   align-self: center;
 }
 
-#call-xyz {
-  height: 120px;
+@media (min-width: 900px) {
+  .about_tec_1 {
+    margin-bottom: 120px;
+  }
 }
 
 @media (max-width: 900px) {
@@ -49,6 +51,7 @@
     flex-direction: column-reverse;
     justify-content: space-between;
     padding-bottom: 120px;
+    margin-bottom: 120px;
   }
 
   .home-main-section .img-wrapper {
@@ -77,7 +80,8 @@
   .separate {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    margin-bottom: 0;
   }
 
   .separate .img-wrapper {
@@ -99,8 +103,8 @@
 
   }
 
-  .separate {
-    justify-content: center;
+  .last-child-section {
+    margin-bottom: 0;
   }
 }
 
@@ -516,7 +520,7 @@ ul li a:hover {
     width: 226px;
     height: 80px;
     padding-bottom: 90px;
-
+    text-align: center;
   }
 
   .subtitle-ii {
@@ -528,6 +532,7 @@ ul li a:hover {
     margin-bottom: 0.5rem;
     width: 244px;
     height: 90px;
+    text-align: center;
   }
 
   .subtitle-iix {
@@ -539,6 +544,7 @@ ul li a:hover {
     margin-bottom: 0.5rem;
     width: 244px;
     height: 10px;
+    text-align: center;
   }
 
   .subtitle-iii {
@@ -549,6 +555,7 @@ ul li a:hover {
     font-size: 14px;
     margin-bottom: 3.2rem;
     width: 244px;
+    text-align: center;
   }
 
 }
@@ -557,4 +564,5 @@ ul li a:hover {
   all: unset;
   color: darkgray;
   text-decoration: underline;
+  cursor: pointer;
 }

@@ -4,183 +4,213 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet" />
-  <link rel="stylesheet" type="text/css"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-  <link rel="stylesheet" href="{% static 'index.css' %}" />
-  <link rel="stylesheet" href="{% static 'style.css' %}">
-  <title>This Excellent Church</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="{% static 'index.css' %}" />
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <title>This Excellent Church</title>
+    <meta name="description" content="Reshaping men’s values and reconciling them back to God">
+
+    <meta name="robots" content="index,follow" />
+
+    <!-- Favicon tags -->
+    <link rel="icon" type="image/x-icon" href="{% static '/favicon.ico' %}">
+    <link rel="shortcut icon" type="image/x-icon" href="{% static '/favicon-32x32.png' %}" />
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static '/favicon-32x32.png' %}" />
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static '/favicon-16x16.png' %}" />
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static '/apple-touch-icon.png' %}" />
+    <link rel="manifest" href="{% static '/site.webmanifest' %}" />
+    <link rel="mask-icon" href="{% static '/safari-pinned-tab.svg' %}" color="#5bbad5" />
+    <meta name="theme-color" content="#7b46f6" />
+
+    <!-- Open Graph tags -->
+    <meta property="og:title" content="This Excellent Church" />
+    <meta property="og:description" content="Reshaping men’s values and reconciling them back to God" />
+    <meta property="og:url" content="https://thisexcellentchurch.org" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://thisexcellentchurch.org/static/assets/og-image.jpg" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:site_name" content="This Excellent Church" />
+
+    <!-- Twitter Card tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@thisexcellentch" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="thisexcellentchurch.org" />
 </head>
 
 <body>
-  <nav>
-    <div class="nav__content">
-      <div class="logo"><a href=""><img src="{% static 'assets\logo.png' %}" alt=""></a></div>
-      <label for="check" class="checkbox">
-        <i class="ri-menu-line"></i>
-      </label>
-      <input type="checkbox" name="check" id="check" />
-      <ul>
-        <li><a href="{% url 'about' %}">ABOUT TEC</a></li>
-        <li><a href="{% url 'resource' %}">RESOURCE CENTER</a></li>
-        <li><a href="{% url 'roadmap' %}">ROADMAP</a></li>
-        <li><a href="{% url 'contacts' %}">CONTACT US</a></li>
-      </ul>
-    </div>
-  </nav>
-  <section class="sectionx">
-    <div class="section__container">
-      <div class="content">
-        <h1 class="title-xx">
-        </h1>
-        <span class="description"> It's good to have you here</span>
-      </div>
-      <div class="image">
-        <img id="circle1" src="{% static 'assets\Ellipse_12.png' %}" alt="profile" />
-        <img id="circle3" src="{% static 'assets\Ellipse_15.png' %}" alt="profile">
-        <img id="circle2" src="{% static 'assets\Ellipse_14.png' %}" alt="profile" />
-      </div>
-    </div>
-  </section>
-  <section class="card-section">
-    <div id="title-we">
-      <span>What Do You</span>
-      <div>
-        <span>Want To</span>
-        <span class="gray-text">Know<span id="not-gray">?</span></span>
-      </div>
-    </div>
+    <nav>
+        <div class="nav__content">
+            <div class="logo"><a href=""><img src="{% static 'assets\logo.png' %}" alt=""></a></div>
+            <label for="check" class="checkbox">
+                <i class="ri-menu-line"></i>
+            </label>
+            <input type="checkbox" name="check" id="check" />
+            <ul>
+                <li><a href="{% url 'about' %}">ABOUT TEC</a></li>
+                <li><a href="{% url 'resource' %}">RESOURCE CENTER</a></li>
+                <li><a href="{% url 'roadmap' %}">ROADMAP</a></li>
+                <li><a href="{% url 'contacts' %}">CONTACT US</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="sectionx">
+        <div class="section__container">
+            <div class="content">
+                <h1 class="title-xx">
+                </h1>
+                <span class="description"> It's good to have you here</span>
+            </div>
+            <div class="image">
+                <img id="circle1" src="{% static 'assets\Ellipse_12.png' %}" alt="profile" />
+                <img id="circle3" src="{% static 'assets\Ellipse_15.png' %}" alt="profile">
+                <img id="circle2" src="{% static 'assets\Ellipse_14.png' %}" alt="profile" />
+            </div>
+        </div>
+    </section>
+    <section class="card-section">
+        <div id="title-we">
+            <span>What Do You</span>
+            <div>
+                <span>Want To</span>
+                <span class="gray-text">Know<span id="not-gray">?</span></span>
+            </div>
+        </div>
 
 
-    <div class="cards-index">
-      <div class="card-index">
-        <div class="transfer-x">I want to know about This Excellent Church</div>
-        <div class="action-btns">
-          <a href="{% url 'about' %}">
-            <button class="hire-me">Let's go</button>
-          </a>
+        <div class="cards-index">
+            <div class="card-index">
+                <div class="transfer-x">I want to know about This Excellent Church</div>
+                <div class="action-btns">
+                    <a href="{% url 'about' %}">
+                        <button class="hire-me">Let's go</button>
+                    </a>
+                </div>
+            </div>
+            <div class="card-index">
+                <div class="transfer-x">I have questions about this world</div>
+                <div class="action-btns">
+                    <a href="{% url 'contacts' %}">
+                        <button class="hire-me">Let's go</button>
+                    </a>
+                </div>
+            </div>
+            <div class="card-index">
+                <div class="transfer-x">I'm looking to know about different christian topics</div>
+                <div class="action-btns">
+                    <a href="{% url 'resource' %}">
+                        <button class="hire-me">Let's go</button>
+                    </a>
+                </div>
+            </div>
+            <div class="card-index">
+                <div class="transfer-x">I will like to chat with someone</div>
+                <div class="action-btns">
+                    <a href="{% url 'contacts' %}">
+                        <button class="hire-me">Let's go</button>
+                    </a>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="card-index">
-        <div class="transfer-x">I have questions about this world</div>
-        <div class="action-btns">
-          <a href="{% url 'contacts' %}">
-            <button class="hire-me">Let's go</button>
-          </a>
-        </div>
-      </div>
-      <div class="card-index">
-        <div class="transfer-x">I'm looking to know about different christian topics</div>
-        <div class="action-btns">
-          <a href="{% url 'resource' %}">
-            <button class="hire-me">Let's go</button>
-          </a>
-        </div>
-      </div>
-      <div class="card-index">
-        <div class="transfer-x">I will like to chat with someone</div>
-        <div class="action-btns">
-          <a href="{% url 'contacts' %}">
-            <button class="hire-me">Let's go</button>
-          </a>
-        </div>
-      </div>
-    </div>
 
-  </section>
-  <section>
-    <div>
-      <div id="title-we-x">
-        <span>Catch Up On</span>
+    </section>
+    <section>
         <div>
-          <span class="gray-text">Service</span>
+            <div id="title-we-x">
+                <span>Catch Up On</span>
+                <div>
+                    <span class="gray-text">Service</span>
+                </div>
+            </div>
+            <div class="video-play">
+                <iframe width="1284" height="642" id="latest-vid"
+                    src="https://www.youtube.com/embed/wuDZLRS7Cf0?si=exg11l59qVI61UoB" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+            <div id="title-we-xx">
+                <span>Dive Deep In <span class="gray-text">Study</span></span>
+            </div>
         </div>
-      </div>
-      <div class="video-play">
-        <iframe width="1284" height="642" id="latest-vid"
-          src="https://www.youtube.com/embed/wuDZLRS7Cf0?si=exg11l59qVI61UoB" title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen></iframe>
-      </div>
-      <div id="title-we-xx">
-        <span>Dive Deep In <span class="gray-text">Study</span></span>
-      </div>
-    </div>
 
-  </section>
-  <section class="deep-dive-section">
+    </section>
+    <section class="deep-dive-section">
 
 
-    <div class="section__container">
-      <div class="image-x">
-        <img id="non-circ" src="{% static 'assets\Frame_105.png' %}" alt="">
-      </div>
-      <div class="content">
-        <p class="description">
-          Our resources page is filled with refreshing content for your spirit.
-        </p>
-        <div class="action__btns">
-          <button class="hire__me">Get Started</button>
+        <div class="section__container">
+            <div class="image-x">
+                <img id="non-circ" src="{% static 'assets\Frame_105.png' %}" alt="">
+            </div>
+            <div class="content">
+                <p class="description">
+                    Our resources page is filled with refreshing content for your spirit.
+                </p>
+                <div class="action__btns">
+                    <button class="hire__me">Get Started</button>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
-  <section>
-    <div id="up-text">
-      <h2>UPCOMING EVENTS</h2>
-    </div>
-    <div class="upcoming-events">
-      {% for event in event_list %}
-      <div class="upcoming">
-        <img id="event-img" src="{% static 'assets/tube-prev.png' %}" alt="">
-        <div class="upcoming-text">
-          <h2>{{event.name}}</h2>
-          <span> {{event.event_date}}</span>
+    </section>
+    <section>
+        <div id="up-text">
+            <h2>UPCOMING EVENTS</h2>
         </div>
-      </div>
-      {% endfor %}
-    </div>
-  </section>
-  <footer class="footer-t">
-    <div class="container-footer">
-      <div class="footer-row">
-        <div class="footer-col">
-          <h4>TEC</h4>
-          <ul>
-            <li><a href="{% url 'about' %}">About TEC</a></li>
-            <li><a href="{% url 'contacts' %}">Contact Us</a></li>
-            <li><a href="{% url 'give' %}">Give</a></li>
-          </ul>
+        <div class="upcoming-events">
+            {% for event in event_list %}
+            <div class="upcoming">
+                <img id="event-img" src="{% static 'assets/tube-prev.png' %}" alt="">
+                <div class="upcoming-text">
+                    <h2>{{event.name}}</h2>
+                    <span> {{event.event_date}}</span>
+                </div>
+            </div>
+            {% endfor %}
         </div>
-        <div class="footer-col">
-          <h4>Learn More</h4>
-          <ul>
-            <li><a href="{% url 'roadmap' %}">Roadmap</a></li>
-            <li><a href="{% url 'resource' %}">Resource Center</a></li>
-          </ul>
+    </section>
+    <footer class="footer-t">
+        <div class="container-footer">
+            <div class="footer-row">
+                <div class="footer-col">
+                    <h4>TEC</h4>
+                    <ul>
+                        <li><a href="{% url 'about' %}">About TEC</a></li>
+                        <li><a href="{% url 'contacts' %}">Contact Us</a></li>
+                        <li><a href="{% url 'give' %}">Give</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Learn More</h4>
+                    <ul>
+                        <li><a href="{% url 'roadmap' %}">Roadmap</a></li>
+                        <li><a href="{% url 'resource' %}">Resource Center</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Keep Up</h4>
+                    <ul>
+                        <li><a href="https://t.me/tec_media" target="_blank">Telegram</a></li>
+                        <li><a href="https://thisexcellentchurch.mixlr.com" target="_blank">Mixlr</a></li>
+                        <li><a href="https://www.youtube.com/@thisexcellentchurch" target="_blank">YouTube</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="https://x.com/thisexcellentch" target="_blank"><i class="fab fa-x-twitter"></i></a>
+                        <a href="https://www.instagram.com/thisexcellentchurch/" target="_blank"><i
+                                class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="footer-col">
-          <h4>Keep Up</h4>
-          <ul>
-            <li><a href="https://t.me/tec_media">Telegram</a></li>
-            <li><a href="https://thisexcellentchurch.mixlr.com">Mixlr</a></li>
-            <li><a href="https://www.youtube.com/@thisexcellentchurch">YouTube</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>follow us</h4>
-          <div class="social-links">
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.instagram.com/thisexcellentchurch/"><i class="fab fa-instagram"></i></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
+    </footer>
 </body>
 
 </html>
