@@ -47,7 +47,10 @@
 <body>
     <nav>
         <div class="nav__content">
-            <div class="logo"><a href=""><img src="{% static 'assets\logo.png' %}" alt=""></a></div>
+
+            <div class="logo">
+                <a href="/"><img width="95" src="{% static 'assets\logo.svg' %}" alt=""></a>
+            </div>
             <label for="check" class="checkbox">
                 <i class="ri-menu-line"></i>
             </label>
@@ -68,9 +71,9 @@
                 <span class="description"> It's good to have you here</span>
             </div>
             <div class="image">
-                <img id="circle1" src="{% static 'assets\Ellipse_12.png' %}" alt="profile" />
+                <img id="circle1" src="{% static 'assets\Ellipse_12_copy.png' %}" alt="profile" />
                 <img id="circle3" src="{% static 'assets\Ellipse_15.png' %}" alt="profile">
-                <img id="circle2" src="{% static 'assets\Ellipse_14.png' %}" alt="profile" />
+                <img id="circle2" src="{% static 'assets\about_tec_3.jpg' %}" alt="profile" />
             </div>
         </div>
     </section>
@@ -153,7 +156,9 @@
                     Our resources page is filled with refreshing content for your spirit.
                 </p>
                 <div class="action__btns">
-                    <button class="hire__me">Get Started</button>
+                    <a href="{% url 'resource' %}">
+                        <button class="hire-me">Get Started</button>
+                    </a>
                 </div>
             </div>
         </div>
