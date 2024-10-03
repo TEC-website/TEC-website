@@ -216,6 +216,5 @@ span#cont-span {
 }
 
 #act-tab {
-    display: flex;
-    flex-direction: column;
+    display: block;
 }
