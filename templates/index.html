@@ -56,6 +56,7 @@
             </label>
             <input type="checkbox" name="check" id="check" />
             <ul>
+                <li><a href="{% url 'index' %}">HOME</a></li>
                 <li><a href="{% url 'about' %}">ABOUT TEC</a></li>
                 <li><a href="{% url 'resource' %}">RESOURCE CENTER</a></li>
                 <li><a href="{% url 'roadmap' %}">ROADMAP</a></li>
@@ -87,9 +88,9 @@
         </div>
 
 
-        <div class="cards-index">
+        <div class="cards-index" style="padding-bottom: 2rem;">
             <div class="card-index">
-                <div class="transfer-x">I want to know about This Excellent Church</div>
+                <div class="transfer-x">I want to know more about This Excellent Church</div>
                 <div class="action-btns">
                     <a href="{% url 'about' %}">
                         <button class="hire-me">Let's go</button>
@@ -97,15 +98,15 @@
                 </div>
             </div>
             <div class="card-index">
-                <div class="transfer-x">I have questions about this world</div>
+                <div class="transfer-x">I want to learn the basics of Christianity</div>
                 <div class="action-btns">
-                    <a href="{% url 'contacts' %}">
+                    <a href="{% url 'roadmap' %}">
                         <button class="hire-me">Let's go</button>
                     </a>
                 </div>
             </div>
             <div class="card-index">
-                <div class="transfer-x">I'm looking to know about different christian topics</div>
+                <div class="transfer-x">I am looking for TEC messages</div>
                 <div class="action-btns">
                     <a href="{% url 'resource' %}">
                         <button class="hire-me">Let's go</button>
@@ -113,7 +114,7 @@
                 </div>
             </div>
             <div class="card-index">
-                <div class="transfer-x">I will like to chat with someone</div>
+                <div class="transfer-x">How can I contact TEC</div>
                 <div class="action-btns">
                     <a href="{% url 'contacts' %}">
                         <button class="hire-me">Let's go</button>
@@ -123,47 +124,8 @@
         </div>
 
     </section>
-    <section>
-        <div>
-            <div id="title-we-x">
-                <span>Catch Up On</span>
-                <div>
-                    <span class="gray-text">Service</span>
-                </div>
-            </div>
-            <div class="video-play">
-                <iframe width="1284" height="642" id="latest-vid"
-                    src="https://www.youtube.com/embed/wuDZLRS7Cf0?si=exg11l59qVI61UoB" title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen></iframe>
-            </div>
-            <div id="title-we-xx">
-                <span>Dive Deep In <span class="gray-text">Study</span></span>
-            </div>
-        </div>
 
-    </section>
-    <section class="deep-dive-section">
-
-
-        <div class="section__container">
-            <div class="image-x">
-                <img id="non-circ" src="{% static 'assets\Frame_105.png' %}" alt="">
-            </div>
-            <div class="content">
-                <p class="description">
-                    Our resources page is filled with refreshing content for your spirit.
-                </p>
-                <div class="action__btns">
-                    <a href="{% url 'resource' %}">
-                        <button class="hire-me">Get Started</button>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section>
+    <!-- <section>
         <div id="up-text">
             <h2>UPCOMING EVENTS</h2>
         </div>
@@ -177,6 +139,23 @@
                 </div>
             </div>
             {% endfor %}
+        </div>
+    </section> -->
+
+    <section class="home-main-section last-child-section" id="main-sec">
+        <div class="call-to-action">
+            <h1 class="description">Service Times</h1>
+            <span class="subtitle" style="text-align: center;">
+                Sunday Service: 8:55am - 11:00am<br /><br />
+                Wednesday Bible Study: 6:30pm - 8:00pm<br /><br />
+                Friday Prayer Meeting: 6:30pm - 8:00pm<br /><br />
+            </span>
+        </div>
+        <div class="img-wrapper" id="img-tst">
+            <div class="globe-img">
+                <img style="max-width: 475px" src="{% static 'assets\PHOTO-2024-09-22-14-03-03.jpg' %}" alt=""
+                    class="responsive-img">
+            </div>
         </div>
     </section>
     <footer class="footer-t">
