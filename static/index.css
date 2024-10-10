@@ -704,6 +704,13 @@ upcoming-text span {
     background-position: left;
   }
 
+
+  
+  .home-main-section .responsive-img {
+    max-width: 475px;
+    width: 100%;
+  }
+
   .home-main-section .description {
     margin-left: 0;
   }
@@ -745,6 +752,7 @@ upcoming-text span {
   
     .home-main-section .responsive-img {
       width: 100%;
+      max-width: 475px;
       height: auto;
       object-fit: contain;
     }
