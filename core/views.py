@@ -1,17 +1,14 @@
 from django.shortcuts import render
-from django.http import HttpResponse
 from django.http import JsonResponse
 from .models import Resource
-from .models import Event
 from django.core import serializers
-from django.utils.timezone import now
 
 
 # Create your views here.
 def index(request):
-    today = now().date()
-    event_list = Event.objects.filter(event_date__gte=today).order_by("event_date")
-    return render(request, "index.html", {"event_list": event_list})
+    # today = now().date()
+    # event_list = Event.objects.filter(event_date__gte=today).order_by("event_date")
+    return render(request, "index.html")
 
 
 def about(request):
