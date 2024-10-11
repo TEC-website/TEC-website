@@ -57,6 +57,7 @@ const displayCourse = (
 
   const a = document.createElement("a");
   a.setAttribute("href", urlValue);
+  a.setAttribute("target", "_blank");
 
   const category = document.createElement("div");
   category.classList.add("category");
