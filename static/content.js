@@ -106,8 +106,6 @@ const displayCourse = (
 };
 
 const generateCourseData = (coursesContainer, tabnum) => {
-  console.log(tabnum);
-  console.log(courses);
   courses.forEach((co) => {
     let c = co.fields;
     if (tabnum == 0) {
@@ -209,12 +207,7 @@ $(document).ready(async function () {
   $('.tabs-control a').click(async function () {
     let index = $(this).index();
     var stre = document.getElementById("mySearch");
-    console.log(index);
     localStorage.setItem('currentTab', index);
-    console.log(tab1bool);
-    console.log(tab2bool);
-    console.log(tab3bool);
-    console.log(tab4bool);
     if (index == 0 || !index) {
       let coursesContainer = document.querySelector(".resource-container");
       coursesContainer.innerHTML = "";

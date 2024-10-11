@@ -1,7 +1,6 @@
 window.onscroll = function () { myFunction() };
 
 var navbar = document.getElementById("fixed-headery");
-console.log(navbar);
 var sticky = navbar.offsetTop;
 
 
