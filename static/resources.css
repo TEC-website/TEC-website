@@ -1,5 +1,5 @@
 body {
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 
 :root {
@@ -13,7 +13,6 @@ body {
   --extra-light: #ffff;
   --max-width: 1200px;
 }
-
 
 nav {
   width: 100%;
@@ -81,7 +80,6 @@ ul li a:hover {
   border-top-color: gray;
   border-bottom-color: gray;
   color: gray;
-
 }
 
 .justify-content-start {
@@ -97,7 +95,6 @@ ul li a:hover {
   align-items: center;
   width: 100vw;
   height: 25vh;
-
 }
 
 #myBtn {
@@ -115,7 +112,7 @@ ul li a:hover {
 }
 
 .tabs-control a.active::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -1px;
   left: 0;
@@ -126,7 +123,7 @@ ul li a:hover {
 }
 
 .tabs-content {
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   padding: 25px;
 }
 
@@ -140,9 +137,7 @@ ul li a:hover {
 }
 
 .sectionx {
-
-  background-color: #F2F2F2;
-
+  background-color: #f2f2f2;
 }
 
 .container-search {
@@ -156,7 +151,7 @@ ul li a:hover {
 }
 
 .box {
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 
 .heading {
@@ -177,7 +172,7 @@ ul li a:hover {
   border: #dfdfdf;
   border-style: solid;
   transition: transform 0.1s ease-in-out;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 
 ::placeholder {
@@ -185,7 +180,7 @@ ul li a:hover {
 }
 
 :focus::placeholder {
-  text-indent: -999px
+  text-indent: -999px;
 }
 
 .searchInput:focus {
@@ -202,10 +197,9 @@ ul li a:hover {
   transition: all 0.1s ease-in-out;
 }
 
-.container:focus-within>.searchInputWrapper>.searchInputIcon {
+.container:focus-within > .searchInputWrapper > .searchInputIcon {
   right: 0.2rem;
 }
-
 
 .content-contain {
   display: flex;
@@ -295,7 +289,6 @@ ul li a:hover {
   color: #545d7a;
 }
 
-
 .content-style .card {
   width: 240px;
   background: #fff;
@@ -350,6 +343,8 @@ ul li a:hover {
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  position: sticky;
+  top: 0;
 }
 
 .content-style .card h2.title {
@@ -430,24 +425,25 @@ ul li a:hover {
   }
 }
 
-@media(max-width: 767px) {
-
+@media (max-width: 767px) {
   .full-height-grow {
     display: flex;
     flex-direction: column;
     width: fit-content;
     width: auto;
+    margin-top: 120px;
   }
 
   .nav-padding {
     padding-top: 24px;
+    z-index: 101;
+    position: fixed;
+  }
+
+  .fixed-header {
+    top: 110px;
   }
 }
-
-
-
-
-
 
 @media screen and (max-width: 1330px) {
   .container {
@@ -465,10 +461,10 @@ ul li a:hover {
   }
 }
 
-
 @media (width < 750px) {
   nav .checkbox {
     display: block;
+    margin-top: -44px;
   }
 
   nav ul {
@@ -483,7 +479,7 @@ ul li a:hover {
     gap: 3rem;
   }
 
-  nav #check:checked~ul {
+  nav #check:checked ~ ul {
     left: 0;
   }
 
@@ -495,7 +491,7 @@ ul li a:hover {
     padding: 3rem 1rem 5rem 1rem;
     text-align: center;
     grid-template-columns: repeat(1, 1fr);
-    background-color: #F2F2F2;
+    background-color: #f2f2f2;
   }
 
   .image {
@@ -509,17 +505,6 @@ ul li a:hover {
   .content-contain {
     width: 400px;
   }
-
-}
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-.sticky+.tabs-content {
-  padding-top: 160px;
 }
 
 @media (min-width: 900px) {

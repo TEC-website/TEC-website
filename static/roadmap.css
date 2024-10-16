@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
 
 :root {
   --primary-color: #1f2937;
@@ -32,7 +32,6 @@
   --font: sans-serif;
 }
 
-
 * {
   padding: 0;
   margin: 0;
@@ -44,7 +43,7 @@ a {
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 nav {
@@ -113,13 +112,12 @@ ul li a:hover {
   border-top-color: gray;
   border-bottom-color: gray;
   color: gray;
-
 }
-
 
 @media (width < 770px) {
   nav .checkbox {
     display: block;
+    margin-top: -44px;
   }
 
   nav ul {
@@ -134,23 +132,22 @@ ul li a:hover {
     gap: 3rem;
   }
 
-  nav #check:checked~ul {
+  nav #check:checked ~ ul {
     left: 0;
   }
 
   nav ul li a {
     font-size: 1.25rem;
   }
-
 }
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600');
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600");
 
 .timeline-body {
   padding: 0;
   margin: 0;
   margin-top: 150px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 h1 {
@@ -167,7 +164,7 @@ h1 {
 }
 
 .timeline:before {
-  content: '';
+  content: "";
   position: absolute;
   left: 50%;
   width: 2px;
@@ -205,7 +202,7 @@ h1 {
 }
 
 .timeline ul li:nth-child(odd):before {
-  content: '';
+  content: "";
   position: absolute;
   width: 10px;
   height: 10px;
@@ -217,7 +214,7 @@ h1 {
 }
 
 .timeline ul li:nth-child(even):before {
-  content: '';
+  content: "";
   position: absolute;
   width: 10px;
   height: 10px;
@@ -272,13 +269,13 @@ h1 {
   box-shadow: 0 0 0 3px #c5c5c5;
 }
 
-@media(max-width:1000px) {
+@media (max-width: 1000px) {
   .timeline {
     width: 100%;
   }
 }
 
-@media(max-width:767px) {
+@media (max-width: 767px) {
   .timeline {
     width: 100%;
     padding-bottom: 0;
@@ -315,7 +312,6 @@ h1 {
     right: inherit;
   }
 }
-
 
 .reg-link {
   all: unset;
