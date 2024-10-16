@@ -464,6 +464,7 @@ ul li a:hover {
 @media (width < 750px) {
   nav .checkbox {
     display: block;
+    margin-top: -44px;
   }
 
   nav ul {
