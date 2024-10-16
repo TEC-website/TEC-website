@@ -2,100 +2,161 @@
 
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'style.css' %}">
-    <link rel="stylesheet" href="{% static 'give.css' %}">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet" />
-    <link rel="stylesheet" type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <title>This Excellent Church ・ Giving</title>
-    <meta name="description" content="Reshaping men’s values and reconciling them back to God">
-
-    <meta name="robots" content="index,follow" />
-
-    <!-- Favicon tags -->
-    <link rel="icon" type="image/x-icon" href="{% static '/favicon.ico' %}">
-    <link rel="shortcut icon" type="image/x-icon" href="{% static '/favicon-32x32.png' %}" />
-    <link rel="icon" type="image/png" sizes="32x32" href="{% static '/favicon-32x32.png' %}" />
-    <link rel="icon" type="image/png" sizes="16x16" href="{% static '/favicon-16x16.png' %}" />
-    <link rel="apple-touch-icon" sizes="180x180" href="{% static '/apple-touch-icon.png' %}" />
-    <link rel="manifest" href="{% static '/site.webmanifest' %}" />
-    <link rel="mask-icon" href="{% static '/safari-pinned-tab.svg' %}" color="#5bbad5" />
-    <meta name="theme-color" content="#7b46f6" />
-
-    <!-- Open Graph tags -->
-    <meta property="og:title" content="This Excellent Church" />
-    <meta property="og:description" content="Reshaping men’s values and reconciling them back to God" />
-    <meta property="og:url" content="https://thisexcellentchurch.org" />
+  <head>
+    <!-- SEO metadata -->
+    <title>This Excellent Church | Evangelical | Charismatic | Give</title>
+    <link rel="canonical" href="https://thisexcellentchurch.org" />
+    <meta
+      name="description"
+      content="We are an evangelical charismatic church in Lagos, Nigeria that affirms that salvation is by grace alone, through faith alone, in Christ alone, as revealed by scripture alone to the glory of God alone."
+    />
+    <!-- Social media tags -->
+    <meta
+      property="og:title"
+      content="This Excellent Church | Evangelical | Charismatic | Give"
+    />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://thisexcellentchurch.org/static/assets/og-image.jpg" />
-    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale" content="en_NG" />
     <meta property="og:site_name" content="This Excellent Church" />
-
-    <!-- Twitter Card tags -->
+    <meta
+      property="og:description"
+      content="We are an evangelical charismatic church in Lagos, Nigeria that affirms that salvation is by grace alone, through faith alone, in Christ alone, as revealed by scripture alone to the glory of God alone."
+    />
+    <meta property="og:url" content="https://thisexcellentchurch.org/give" />
+    <meta
+      property="og:image"
+      content="https://thisexcellentchurch.org/static/assets/og-image.jpg"
+    />
+    <meta
+      property="og:image:secure_url"
+      content="https://thisexcellentchurch.org/static/assets/og-image.jpg"
+    />
+    <meta property="og:image:width" content="500" />
+    <meta property="og:image:height" content="500" />
+    <meta property="og:image:alt" content="This Excellent Church" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@thisexcellentch" />
+    <meta
+      name="twitter:title"
+      content="This Excellent Church | Evangelical | Charismatic | Give"
+    />
+    <meta
+      name="twitter:description"
+      content="We are an evangelical charismatic church in Lagos, Nigeria that affirms that salvation is by grace alone, through faith alone, in Christ alone, as revealed by scripture alone to the glory of God alone."
+    />
+    <meta
+      name="twitter:image"
+      content="https://thisexcellentchurch.org/static/assets/og-image.jpg"
+    />
+    <meta name="template" content="This Excellent Church Give" />
+    <meta name="theme" content="White, Secondary Black" />
+    <meta
+      name="experiment-control"
+      content="https://thisexcellentchurch.org/give"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#7b46f6" />
+    <meta name="robots" content="index,follow" />
+    <!-- Styles -->
+    <link rel="stylesheet" href="{% static 'style.css' %}" />
+    <link rel="stylesheet" href="{% static 'give.css' %}" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <!-- Favicon tags -->
+    <link rel="icon" type="image/x-icon" href="{% static '/favicon.ico' %}" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="{% static '/favicon-32x32.png' %}"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="{% static '/favicon-32x32.png' %}"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="{% static '/favicon-16x16.png' %}"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="{% static '/apple-touch-icon.png' %}"
+    />
+    <link rel="manifest" href="{% static '/site.webmanifest' %}" />
+    <link
+      rel="mask-icon"
+      href="{% static '/safari-pinned-tab.svg' %}"
+      color="#5bbad5"
+    />
+    <meta name="theme-color" content="#7b46f6" />
+  </head>
 
-    <!-- Canonical URL -->
-    <link rel="canonical" href="thisexcellentchurch.org" />
-</head>
-
-<body class="full-height-grow">
+  <body class="full-height-grow">
     <div class="container full-height-grow">
-        <nav>
-            <div class="nav__content">
-
-                <div class="logo">
-                    <a href="/"><img width="95" src="{% static 'assets\logo.svg' %}" alt=""></a>
-                </div>
-                <label for="check" class="checkbox">
-                    <i class="ri-menu-line"></i>
-                </label>
-                <input type="checkbox" name="check" id="check" />
-                <ul>
-                    <li><a href="{% url 'index' %}">HOME</a></li>
-                    <li><a href="{% url 'about' %}">ABOUT TEC</a></li>
-                    <li><a href="{% url 'resource' %}">RESOURCE CENTER</a></li>
-                    <li><a href="{% url 'roadmap' %}">ROADMAP</a></li>
-                    <li><a href="{% url 'contacts' %}">CONTACT US</a></li>
-                </ul>
-            </div>
-        </nav>
-        <div class="card-contact">
-            <div class="container">
-                <div class="card-header">
-                    <h2 class="">Church Accounts</h2>
-                </div>
-                <div class="card-body">
-                    <div id="act-tab" class="tab-content current">
-                        <h3>Naira</h3>
-                        <h4>Account Number: 1217858534</h4>
-                        <h4>Account Name: Phos Anthropos Global Ministry</h4>
-                        <h4>Bank Name: Zenith Bank</h4>
-                    </div>
-                    <div id="act-tab" class="tab-content current">
-                        <h3>USD</h3>
-                        <h4>Account Number: 5074680969</h4>
-                        <h4>Account Name: Phos Anthropos Global Ministry</h4>
-                        <h4>Bank Name: Zenith Bank</h4>
-                        <h4>IBAN: 36141884</h4>
-                        <h4>Swift Code: ZEIBNGLA</h4>
-                    </div>
-                    <div id="act-tab" class="tab-content current">
-                        <h3>GBP</h3>
-                        <h4>Account Number: 5061439231</h4>
-                        <h4>Account Name: Phos Anthropos Global Ministry</h4>
-                        <h4>Bank Name: Zenith Bank</h4>
-                        <h4>IBAN: GB22CITI18500805527945</h4>
-                        <h4>Swift Code: CITIGB2L</h4>
-                    </div>
-                </div>
-            </div>
+      <nav>
+        <div class="nav__content">
+          <div class="logo">
+            <a href="/"
+              ><img width="95" src="{% static 'assets\logo.svg' %}" alt=""
+            /></a>
+          </div>
+          <label for="check" class="checkbox">
+            <i class="ri-menu-line"></i>
+          </label>
+          <input type="checkbox" name="check" id="check" />
+          <ul>
+            <li><a href="{% url 'index' %}">HOME</a></li>
+            <li><a href="{% url 'about' %}">ABOUT TEC</a></li>
+            <li><a href="{% url 'resource' %}">RESOURCE CENTER</a></li>
+            <li><a href="{% url 'roadmap' %}">ROADMAP</a></li>
+            <li><a href="{% url 'contacts' %}">CONTACT US</a></li>
+          </ul>
         </div>
-</body>
-
+      </nav>
+      <div class="card-contact">
+        <div class="container">
+          <div class="card-header">
+            <h2 class="">Church Accounts</h2>
+          </div>
+          <div class="card-body">
+            <div id="act-tab" class="tab-content current">
+              <h3>Naira</h3>
+              <h4>Account Number: 1217858534</h4>
+              <h4>Account Name: Phos Anthropos Global Ministry</h4>
+              <h4>Bank Name: Zenith Bank</h4>
+            </div>
+            <div id="act-tab" class="tab-content current">
+              <h3>USD</h3>
+              <h4>Account Number: 5074680969</h4>
+              <h4>Account Name: Phos Anthropos Global Ministry</h4>
+              <h4>Bank Name: Zenith Bank</h4>
+              <h4>IBAN: 36141884</h4>
+              <h4>Swift Code: ZEIBNGLA</h4>
+            </div>
+            <div id="act-tab" class="tab-content current">
+              <h3>GBP</h3>
+              <h4>Account Number: 5061439231</h4>
+              <h4>Account Name: Phos Anthropos Global Ministry</h4>
+              <h4>Bank Name: Zenith Bank</h4>
+              <h4>IBAN: GB22CITI18500805527945</h4>
+              <h4>Swift Code: CITIGB2L</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
