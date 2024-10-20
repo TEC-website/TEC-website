@@ -1,152 +1,239 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
+    <!-- SEO metadata -->
+    <title>
+      This Excellent Church - An Evangelical, Charismatic, and Reformed
+      Community | Creeds
+    </title>
+    <link rel="canonical" href="https://thisexcellentchurch.org" />
+    <meta
+      name="description"
+      content="We are an evangelical, reformed and charismatic church in Lagos, Nigeria that affirms that salvation is by grace alone, through faith alone, in Christ alone, as revealed by scripture alone to the glory of God alone."
+    />
+    <meta
+      name="google-site-verification"
+      content="65SQPlyes0D9EL6G5T6Ft0IJ85-fPPwO2I0YFeI9G84"
+    />
+    <!-- Social media tags -->
+    <meta
+      property="og:title"
+      content="This Excellent Church - An Evangelical, Charismatic, and Reformed Community | Creeds"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_NG" />
+    <meta property="og:site_name" content="This Excellent Church" />
+    <meta
+      property="og:description"
+      content="We are an evangelical, reformed and charismatic church in Lagos, Nigeria that affirms that salvation is by grace alone, through faith alone, in Christ alone, as revealed by scripture alone to the glory of God alone."
+    />
+    <meta property="og:url" content="https://thisexcellentchurch.org/creeds" />
+    <meta
+      property="og:image"
+      content="https://thisexcellentchurch.org/static/assets/og-image.jpg"
+    />
+    <meta
+      property="og:image:secure_url"
+      content="https://thisexcellentchurch.org/static/assets/og-image.jpg"
+    />
+    <meta property="og:image:width" content="500" />
+    <meta property="og:image:height" content="500" />
+    <meta property="og:image:alt" content="This Excellent Church" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@thisexcellentch" />
+    <meta
+      name="twitter:title"
+      content="This Excellent Church - An Evangelical, Charismatic, and Reformed Community | Creeds"
+    />
+    <meta
+      name="twitter:description"
+      content="We are an evangelical, reformed and charismatic church in Lagos, Nigeria that affirms that salvation is by grace alone, through faith alone, in Christ alone, as revealed by scripture alone to the glory of God alone."
+    />
+    <meta
+      name="twitter:image"
+      content="https://thisexcellentchurch.org/static/assets/og-image.jpg"
+    />
+    <meta name="template" content="This Excellent Church Creeds" />
+    <meta name="theme" content="White, Secondary Black" />
+    <meta
+      name="experiment-control"
+      content="https://thisexcellentchurch.org/creeds"
+    />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet" />
-    <link rel="stylesheet" type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <link rel="stylesheet" href="{% static 'style.css' %}">
-    <link rel="stylesheet" href="{% static 'creed.css' %}">
-    <title>This Excellent Church ・ Creeds</title>
-    <meta name="description" content="Reshaping men’s values and reconciling them back to God">
-
-    <meta name="robots" content="index,follow" />
-
-    <!-- Favicon tags -->
-    <link rel="icon" type="image/x-icon" href="{% static '/favicon.ico' %}">
-    <link rel="shortcut icon" type="image/x-icon" href="{% static '/favicon-32x32.png' %}" />
-    <link rel="icon" type="image/png" sizes="32x32" href="{% static '/favicon-32x32.png' %}" />
-    <link rel="icon" type="image/png" sizes="16x16" href="{% static '/favicon-16x16.png' %}" />
-    <link rel="apple-touch-icon" sizes="180x180" href="{% static '/apple-touch-icon.png' %}" />
-    <link rel="manifest" href="{% static '/site.webmanifest' %}" />
-    <link rel="mask-icon" href="{% static '/safari-pinned-tab.svg' %}" color="#5bbad5" />
     <meta name="theme-color" content="#7b46f6" />
+    <meta name="robots" content="index,follow" />
+    <!-- Styles -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="{% static 'style.css' %}" />
+    <link rel="stylesheet" href="{% static 'creed.css' %}" />
+    <!-- Favicon tags -->
+    <link rel="icon" type="image/x-icon" href="{% static '/favicon.ico' %}" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="{% static '/favicon-32x32.png' %}"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="{% static '/favicon-32x32.png' %}"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="{% static '/favicon-16x16.png' %}"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="{% static '/apple-touch-icon.png' %}"
+    />
+    <link rel="manifest" href="{% static '/site.webmanifest' %}" />
+    <link
+      rel="mask-icon"
+      href="{% static '/safari-pinned-tab.svg' %}"
+      color="#5bbad5"
+    />
+  </head>
 
-    <!-- Open Graph tags -->
-    <meta property="og:title" content="This Excellent Church" />
-    <meta property="og:description" content="Reshaping men’s values and reconciling them back to God" />
-    <meta property="og:url" content="https://thisexcellentchurch.org" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://thisexcellentchurch.org/static/assets/og-image.jpg" />
-    <meta property="og:locale" content="en_US" />
-    <meta property="og:site_name" content="This Excellent Church" />
-
-    <!-- Twitter Card tags -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@thisexcellentch" />
-
-    <!-- Canonical URL -->
-    <link rel="canonical" href="thisexcellentchurch.org" />
-</head>
-
-<body>
+  <body>
     <nav>
-        <div class="nav__content">
-
-            <div class="logo">
-                <a href="/"><img width="95" src="{% static 'assets\logo.svg' %}" alt=""></a>
-            </div>
-            <label for="check" class="checkbox">
-                <i class="ri-menu-line"></i>
-            </label>
-            <input type="checkbox" name="check" id="check" />
-            <ul>
-                <li><a href="{% url 'index' %}">HOME</a></li>
-                <li><a href="{% url 'about' %}">ABOUT TEC</a></li>
-                <li><a href="{% url 'resource' %}">RESOURCE CENTER</a></li>
-                <li><a href="{% url 'roadmap' %}">ROADMAP</a></li>
-                <li><a href="{% url 'contacts' %}">CONTACT US</a></li>
-            </ul>
+      <div class="nav__content">
+        <div class="logo">
+          <a href="/"
+            ><img width="95" src="{% static 'assets\logo.svg' %}" alt=""
+          /></a>
         </div>
+        <label for="check" class="checkbox">
+          <i class="ri-menu-line"></i>
+        </label>
+        <input type="checkbox" name="check" id="check" />
+        <ul>
+          <li><a href="{% url 'index' %}">HOME</a></li>
+          <li><a href="{% url 'about' %}">ABOUT TEC</a></li>
+          <li><a href="{% url 'resource' %}">RESOURCE CENTER</a></li>
+          <li><a href="{% url 'roadmap' %}">ROADMAP</a></li>
+          <li><a href="{% url 'contacts' %}">CONTACT US</a></li>
+        </ul>
+      </div>
     </nav>
 
     <center>
-        <h1 style="margin-top: 180px;">The Chalcedonian Definition</h1>
-        <p class="subtitle">
-            Therefore, following the holy fathers, we all with one accord teach men to
-            acknowledge one and the same Son, our Lord Jesus Christ, at once complete in Godhead and complete in
-            manhood, truly God and truly man, consisting also of a reasonable soul and body;
-            of one substance with the Father as regards his Godhead, and at the same time of one substance with
-            us as regards his manhood;
-            like us in all respects, apart from sin; as regards his Godhead, begotten of the Father before the
-            ages,
-            but yet as regards his manhood begotten, for us men and for our salvation, of Mary the Virgin,
-            the God-bearer; one and the same Christ, Son, Lord, Only-begotten, recognized in two natures,
-            without confusion, without change, without division, without separation;
-            the distinction of natures being in no way annulled by the union, but rather the characteristics of
-            each nature being preserved and coming together to form one person and subsistence,
-            not as parted or separated into two persons, but one and the same Son and Only-begotten God the
-            Word, Lord Jesus Christ; even as the prophets from earliest times spoke of him,
-            and our Lord Jesus Christ himself taught us, and the creed of the fathers has handed down to us.
-        </p>
+      <h1 style="margin-top: 180px">The Chalcedonian Definition</h1>
+      <p class="subtitle">
+        Therefore, following the holy fathers, we all with one accord teach men
+        to acknowledge one and the same Son, our Lord Jesus Christ, at once
+        complete in Godhead and complete in manhood, truly God and truly man,
+        consisting also of a reasonable soul and body; of one substance with the
+        Father as regards his Godhead, and at the same time of one substance
+        with us as regards his manhood; like us in all respects, apart from sin;
+        as regards his Godhead, begotten of the Father before the ages, but yet
+        as regards his manhood begotten, for us men and for our salvation, of
+        Mary the Virgin, the God-bearer; one and the same Christ, Son, Lord,
+        Only-begotten, recognized in two natures, without confusion, without
+        change, without division, without separation; the distinction of natures
+        being in no way annulled by the union, but rather the characteristics of
+        each nature being preserved and coming together to form one person and
+        subsistence, not as parted or separated into two persons, but one and
+        the same Son and Only-begotten God the Word, Lord Jesus Christ; even as
+        the prophets from earliest times spoke of him, and our Lord Jesus Christ
+        himself taught us, and the creed of the fathers has handed down to us.
+      </p>
     </center>
 
     <center>
-        <h1 style="margin-top: 100px;">The Nicene Creed</h1>
-        <p class="subtitle">
-            We believe in one God, the Father Almighty, the maker of heaven and earth, of things visible and invisible.
-            And in one Lord Jesus Christ, the Son of God, the begotten of God the Father, the Only-begotten, that is of
-            the substance of the Father.
-            God of God, Light of Light, true God of true God, begotten and not made; of the very same nature of the
-            Father, by Whom all things came into being, in heaven and on earth, visible and invisible.
-            Who for us humanity and for our salvation came down from heaven, was incarnate, became human, was born
-            perfectly of the holy virgin Mary by the Holy Spirit.
-            By whom He took body, soul, and mind, and everything that is in man, truly and not in semblance.
-            He suffered, was crucified, was buried, rose again on the third day, ascended into heaven with the same
-            body, [and] sat at the right hand of the Father.
-            He is to come with the same body and with the glory of the Father, to judge the living and the dead; of His
-            kingdom there is no end.
-            We believe in the Holy Spirit, the uncreate and the perfect; Who spoke through the Law, the prophets, and
-            the Gospels;
-            Who came down upon the Jordan, preached through the apostles, and lived in the saints.
-            We believe also in only One, Universal, Apostolic, and [Holy] Church; in one baptism with repentance for the
-            remission and forgiveness of sins;
-            and in the resurrection of the dead, in the everlasting judgement of souls and bodies, in the Kingdom of
-            Heaven and in the everlasting life
-        </p>
+      <h1 style="margin-top: 100px">The Nicene Creed</h1>
+      <p class="subtitle">
+        We believe in one God, the Father Almighty, the maker of heaven and
+        earth, of things visible and invisible. And in one Lord Jesus Christ,
+        the Son of God, the begotten of God the Father, the Only-begotten, that
+        is of the substance of the Father. God of God, Light of Light, true God
+        of true God, begotten and not made; of the very same nature of the
+        Father, by Whom all things came into being, in heaven and on earth,
+        visible and invisible. Who for us humanity and for our salvation came
+        down from heaven, was incarnate, became human, was born perfectly of the
+        holy virgin Mary by the Holy Spirit. By whom He took body, soul, and
+        mind, and everything that is in man, truly and not in semblance. He
+        suffered, was crucified, was buried, rose again on the third day,
+        ascended into heaven with the same body, [and] sat at the right hand of
+        the Father. He is to come with the same body and with the glory of the
+        Father, to judge the living and the dead; of His kingdom there is no
+        end. We believe in the Holy Spirit, the uncreate and the perfect; Who
+        spoke through the Law, the prophets, and the Gospels; Who came down upon
+        the Jordan, preached through the apostles, and lived in the saints. We
+        believe also in only One, Universal, Apostolic, and [Holy] Church; in
+        one baptism with repentance for the remission and forgiveness of sins;
+        and in the resurrection of the dead, in the everlasting judgement of
+        souls and bodies, in the Kingdom of Heaven and in the everlasting life
+      </p>
     </center>
 
     <footer class="footer-t">
-        <div class="container-footer">
-            <div class="footer-row">
-                <div class="footer-col">
-                    <h4>TEC</h4>
-                    <ul>
-                        <li><a href="{% url 'about' %}">About TEC</a></li>
-                        <li><a href="{% url 'contacts' %}">Contact Us</a></li>
-                        <li><a href="{% url 'give' %}">Give</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Learn More</h4>
-                    <ul>
-                        <li><a href="{% url 'roadmap' %}">Roadmap</a></li>
-                        <li><a href="{% url 'resource' %}">Resource Center</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Keep Up</h4>
-                    <ul>
-                        <li><a href="https://t.me/tec_media" target="_blank">Telegram</a></li>
-                        <li><a href="https://thisexcellentchurch.mixlr.com" target="_blank">Mixlr</a></li>
-                        <li><a href="https://www.youtube.com/@thisexcellentchurch" target="_blank">YouTube</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>follow us</h4>
-                    <div class="social-links">
-                        <a href="https://x.com/thisexcellentch" target="_blank"><i class="fab fa-x-twitter"></i></a>
-                        <a href="https://www.instagram.com/thisexcellentchurch/" target="_blank"><i
-                                class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
+      <div class="container-footer">
+        <div class="footer-row">
+          <div class="footer-col">
+            <h4>TEC</h4>
+            <ul>
+              <li><a href="{% url 'about' %}">About TEC</a></li>
+              <li><a href="{% url 'contacts' %}">Contact Us</a></li>
+              <li><a href="{% url 'give' %}">Give</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Learn More</h4>
+            <ul>
+              <li><a href="{% url 'roadmap' %}">Roadmap</a></li>
+              <li><a href="{% url 'resource' %}">Resource Center</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Keep Up</h4>
+            <ul>
+              <li>
+                <a href="https://t.me/tec_media" target="_blank">Telegram</a>
+              </li>
+              <li>
+                <a href="https://thisexcellentchurch.mixlr.com" target="_blank"
+                  >Mixlr</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.youtube.com/@thisexcellentchurch"
+                  target="_blank"
+                  >YouTube</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>follow us</h4>
+            <div class="social-links">
+              <a href="https://x.com/thisexcellentch" target="_blank"
+                ><i class="fab fa-x-twitter"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/thisexcellentchurch/"
+                target="_blank"
+                ><i class="fab fa-instagram"></i
+              ></a>
             </div>
+          </div>
         </div>
+      </div>
     </footer>
-</body>
-
+  </body>
 </html>

@@ -1,244 +1,400 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
+    <!-- SEO metadata -->
+    <title>
+      This Excellent Church - An Evangelical, Charismatic, and Reformed
+      Community | Roadmap
+    </title>
+    <link rel="canonical" href="https://thisexcellentchurch.org" />
+    <meta
+      name="description"
+      content="We are an evangelical, reformed and charismatic church in Lagos, Nigeria that affirms that salvation is by grace alone, through faith alone, in Christ alone, as revealed by scripture alone to the glory of God alone."
+    />
+    <meta
+      name="google-site-verification"
+      content="65SQPlyes0D9EL6G5T6Ft0IJ85-fPPwO2I0YFeI9G84"
+    />
+    <!-- Social media tags -->
+    <meta
+      property="og:title"
+      content="This Excellent Church - An Evangelical, Charismatic, and Reformed Community | Roadmap"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_NG" />
+    <meta property="og:site_name" content="This Excellent Church" />
+    <meta
+      property="og:description"
+      content="We are an evangelical, reformed and charismatic church in Lagos, Nigeria that affirms that salvation is by grace alone, through faith alone, in Christ alone, as revealed by scripture alone to the glory of God alone."
+    />
+    <meta property="og:url" content="https://thisexcellentchurch.org/roadmap" />
+    <meta
+      property="og:image"
+      content="https://thisexcellentchurch.org/static/assets/og-image.jpg"
+    />
+    <meta
+      property="og:image:secure_url"
+      content="https://thisexcellentchurch.org/static/assets/og-image.jpg"
+    />
+    <meta property="og:image:width" content="500" />
+    <meta property="og:image:height" content="500" />
+    <meta property="og:image:alt" content="This Excellent Church" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@thisexcellentch" />
+    <meta
+      name="twitter:title"
+      content="This Excellent Church - An Evangelical, Charismatic, and Reformed Community | Roadmap"
+    />
+    <meta
+      name="twitter:description"
+      content="We are an evangelical, reformed and charismatic church in Lagos, Nigeria that affirms that salvation is by grace alone, through faith alone, in Christ alone, as revealed by scripture alone to the glory of God alone."
+    />
+    <meta
+      name="twitter:image"
+      content="https://thisexcellentchurch.org/static/assets/og-image.jpg"
+    />
+    <meta name="template" content="This Excellent Church Home" />
+    <meta name="theme" content="White, Secondary Black" />
+    <meta
+      name="experiment-control"
+      content="https://thisexcellentchurch.org/roadmap"
+    />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet" />
-    <link rel="stylesheet" type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <link rel="stylesheet" href="{% static 'style.css' %}">
-    <link rel="stylesheet" href="{% static 'roadmap.css' %}">
-
-    <title>This Excellent Church ・ Roadmap</title>
-    <meta name="description" content="Reshaping men’s values and reconciling them back to God">
-
-    <meta name="robots" content="index,follow" />
-
-    <!-- Favicon tags -->
-    <link rel="icon" type="image/x-icon" href="{% static '/favicon.ico' %}">
-    <link rel="shortcut icon" type="image/x-icon" href="{% static '/favicon-32x32.png' %}" />
-    <link rel="icon" type="image/png" sizes="32x32" href="{% static '/favicon-32x32.png' %}" />
-    <link rel="icon" type="image/png" sizes="16x16" href="{% static '/favicon-16x16.png' %}" />
-    <link rel="apple-touch-icon" sizes="180x180" href="{% static '/apple-touch-icon.png' %}" />
-    <link rel="manifest" href="{% static '/site.webmanifest' %}" />
-    <link rel="mask-icon" href="{% static '/safari-pinned-tab.svg' %}" color="#5bbad5" />
     <meta name="theme-color" content="#7b46f6" />
+    <meta name="robots" content="index,follow" />
+    <!-- Styles -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="{% static 'style.css' %}" />
+    <link rel="stylesheet" href="{% static 'roadmap.css' %}" />
+    <!-- Favicon tags -->
+    <link rel="icon" type="image/x-icon" href="{% static '/favicon.ico' %}" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="{% static '/favicon-32x32.png' %}"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="{% static '/favicon-32x32.png' %}"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="{% static '/favicon-16x16.png' %}"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="{% static '/apple-touch-icon.png' %}"
+    />
+    <link rel="manifest" href="{% static '/site.webmanifest' %}" />
+    <link
+      rel="mask-icon"
+      href="{% static '/safari-pinned-tab.svg' %}"
+      color="#5bbad5"
+    />
+  </head>
 
-    <!-- Open Graph tags -->
-    <meta property="og:title" content="This Excellent Church" />
-    <meta property="og:description" content="Reshaping men’s values and reconciling them back to God" />
-    <meta property="og:url" content="https://thisexcellentchurch.org" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://thisexcellentchurch.org/static/assets/og-image.jpg" />
-    <meta property="og:locale" content="en_US" />
-    <meta property="og:site_name" content="This Excellent Church" />
-
-    <!-- Twitter Card tags -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@thisexcellentch" />
-
-    <!-- Canonical URL -->
-    <link rel="canonical" href="thisexcellentchurch.org" />
-</head>
-
-<body>
+  <body>
     <nav>
-        <div class="nav__content">
-
-            <div class="logo">
-                <a href="/"><img width="95" src="{% static 'assets\logo.svg' %}" alt=""></a>
-            </div>
-            <label for="check" class="checkbox">
-                <i class="ri-menu-line"></i>
-            </label>
-            <input type="checkbox" name="check" id="check" />
-            <ul>
-                <li><a href="{% url 'index' %}">HOME</a></li>
-                <li><a href="{% url 'about' %}">ABOUT TEC</a></li>
-                <li><a href="{% url 'resource' %}">RESOURCE CENTER</a></li>
-                <li><a href="{% url 'roadmap' %}">ROADMAP</a></li>
-                <li><a href="{% url 'contacts' %}">CONTACT US</a></li>
-            </ul>
+      <div class="nav__content">
+        <div class="logo">
+          <a href="/"
+            ><img width="95" src="{% static 'assets\logo.svg' %}" alt=""
+          /></a>
         </div>
+        <label for="check" class="checkbox">
+          <i class="ri-menu-line"></i>
+        </label>
+        <input type="checkbox" name="check" id="check" />
+        <ul>
+          <li><a href="{% url 'index' %}">HOME</a></li>
+          <li><a href="{% url 'about' %}">ABOUT TEC</a></li>
+          <li><a href="{% url 'resource' %}">RESOURCE CENTER</a></li>
+          <li><a href="{% url 'roadmap' %}">ROADMAP</a></li>
+          <li><a href="{% url 'contacts' %}">CONTACT US</a></li>
+        </ul>
+      </div>
     </nav>
     <section class="timeline-body">
-        <div class="timeline">
-            <ul>
-                <li>
-                    <div class="content">
-                        <h4>Understanding the Christian faith <br />in God for our salvation</h4>
-                        <p>
-                            <a class="reg-link" href="https://youtu.be/eJr6_ycs85g?si=-_0c6wzXtkSpqFMY" target="_blank">Tears and
-                                Perfumes</a><br />
-                            <a class="reg-link"
-                                href="https://youtube.com/playlist?list=PLmcdWA2cZUfukBYla4jsLaXVOwQoUQqVI&si=HNYEkhAY7RYud1jg" target="_blank">Sinai
-                                and Zion</a><br />
-                            <a class="reg-link"
-                                href="https://www.youtube.com/watch?v=AeoHVBkIcjE&list=PLmcdWA2cZUfsUHvpDN1xaWFqjXONj7Tjn&pp=iAQB" target="_blank">Facets
-                                of our Salvation</a><br />
-                            <a class="reg-link" href="https://youtu.be/oFZWGqXtNwE?si=m3m6mywP7uRTXHWy" target="_blank">Saints and
-                                Sinners</a><br />
-                            <a class="reg-link"
-                                href="https://open.spotify.com/episode/3fXe2cyKjl2pVt4sncbfrj?si=ceHFIVPTR0axJX5VwX5YPA" target="_blank">Saints
-                                and Sinners - Part 2</a>
-                        </p>
-                    </div>
-                    <div class="time">
-                        <h4>Journey begins!</h4>
-                    </div>
-                </li>
+      <div class="timeline">
+        <ul>
+          <li>
+            <div class="content">
+              <h4>
+                Understanding the Christian faith <br />in God for our salvation
+              </h4>
+              <p>
+                <a
+                  class="reg-link"
+                  href="https://youtu.be/eJr6_ycs85g?si=-_0c6wzXtkSpqFMY"
+                  target="_blank"
+                  >Tears and Perfumes</a
+                ><br />
+                <a
+                  class="reg-link"
+                  href="https://youtube.com/playlist?list=PLmcdWA2cZUfukBYla4jsLaXVOwQoUQqVI&si=HNYEkhAY7RYud1jg"
+                  target="_blank"
+                  >Sinai and Zion</a
+                ><br />
+                <a
+                  class="reg-link"
+                  href="https://www.youtube.com/watch?v=AeoHVBkIcjE&list=PLmcdWA2cZUfsUHvpDN1xaWFqjXONj7Tjn&pp=iAQB"
+                  target="_blank"
+                  >Facets of our Salvation</a
+                ><br />
+                <a
+                  class="reg-link"
+                  href="https://youtu.be/oFZWGqXtNwE?si=m3m6mywP7uRTXHWy"
+                  target="_blank"
+                  >Saints and Sinners</a
+                ><br />
+                <a
+                  class="reg-link"
+                  href="https://open.spotify.com/episode/3fXe2cyKjl2pVt4sncbfrj?si=ceHFIVPTR0axJX5VwX5YPA"
+                  target="_blank"
+                  >Saints and Sinners - Part 2</a
+                >
+              </p>
+            </div>
+            <div class="time">
+              <h4>Journey begins!</h4>
+            </div>
+          </li>
 
-                <li>
-                    <div class="content">
-                        <h4>The world is a painful place. Why is it so?</h4>
-                        <p>
+          <li>
+            <div class="content">
+              <h4>The world is a painful place. Why is it so?</h4>
+              <p>
+                <a
+                  class="reg-link"
+                  href="https://open.spotify.com/episode/77euLWBRKRZb7odP0ZZWfp?si=b5HRMgpnRLW7Cv6v3CRL0g"
+                  target="_blank"
+                  >Creations' Earnest Expectation</a
+                ><br />
 
-                            <a class="reg-link"
-                                href="https://open.spotify.com/episode/77euLWBRKRZb7odP0ZZWfp?si=b5HRMgpnRLW7Cv6v3CRL0g" target="_blank">Creations'
-                                Earnest Expectation</a><br />
+                <a
+                  class="reg-link"
+                  href="https://open.spotify.com/episode/0TjAZMIB74bx1ySiSCxrYz?si=Yv1zztTDQ9qOAYM7K4tLwQ"
+                  target="_blank"
+                >
+                  Creations' Earnest Expectation - Part 2</a
+                ><br />
 
+                <a
+                  class="reg-link"
+                  href="https://open.spotify.com/episode/2vztXX2wP0VFATgPUhrwSD?si=MusszpSUSgyoe8QhU5LdyQ"
+                  target="_blank"
+                >
+                  Creations' Earnest Expectation - Part 3</a
+                ><br />
 
-                            <a class="reg-link"
-                                href="https://open.spotify.com/episode/0TjAZMIB74bx1ySiSCxrYz?si=Yv1zztTDQ9qOAYM7K4tLwQ" target="_blank">
-                                Creations' Earnest Expectation - Part 2</a><br />
+                <a
+                  class="reg-link"
+                  href="https://youtu.be/wgp5YREEAB8"
+                  target="_blank"
+                >
+                  The work of Satan</a
+                ><br />
 
-                            <a class="reg-link"
-                                href="https://open.spotify.com/episode/2vztXX2wP0VFATgPUhrwSD?si=MusszpSUSgyoe8QhU5LdyQ" target="_blank">
-                                Creations' Earnest Expectation - Part 3</a><br />
+                <a
+                  class="reg-link"
+                  href="https://youtu.be/27iE6VWAGbE"
+                  target="_blank"
+                >
+                  Think, Be wise</a
+                ><br />
+              </p>
+            </div>
+            <div class="time">
+              <h4>Next checkpoint</h4>
+            </div>
+          </li>
 
+          <li>
+            <div class="content">
+              <h4>Understand God's sovereignty better</h4>
+              <p>
+                <a
+                  class="reg-link"
+                  href="https://www.youtube.com/playlist?list=PLmcdWA2cZUfs8iC1Kuq1wMXsjMVOzn97u"
+                  target="_blank"
+                >
+                  The Hand of God Series</a
+                ><br />
 
-                            <a class="reg-link" href="https://youtu.be/wgp5YREEAB8" target="_blank">
-                                The work of Satan</a><br />
+                <a
+                  class="reg-link"
+                  href="https://open.spotify.com/episode/3xwOsVTrUKE46uRU6GVHGr?si=yZ_CzviXRJuncyTxgiU2YA"
+                  target="_blank"
+                >
+                  God is in control</a
+                ><br />
 
+                <a
+                  class="reg-link"
+                  href="https://open.spotify.com/episode/33xTqwxI77MCQX14mR40en?si=-wib2o6MThSAOTfwJexYlQ"
+                  target="_blank"
+                >
+                  God is in control - Part 2</a
+                ><br />
 
-                            <a class="reg-link" href="https://youtu.be/27iE6VWAGbE" target="_blank">
-                                Think, Be wise</a><br />
-                        </p>
-                    </div>
-                    <div class="time">
-                        <h4>Next checkpoint</h4>
-                    </div>
-                </li>
+                <a
+                  class="reg-link"
+                  href="https://www.youtube.com/playlist?list=PLmcdWA2cZUfuv4agwdJWPDNYAL1xo1r2I"
+                  target="_blank"
+                >
+                  Romans 9 Bible Seminar</a
+                ><br />
+              </p>
+            </div>
+            <div class="time">
+              <h4>Halfway point!</h4>
+            </div>
+          </li>
 
-                <li>
-                    <div class="content">
-                        <h4>Understand God's sovereignty better</h4>
-                        <p>
+          <li>
+            <div class="content">
+              <h4>Understand the purpose of God for your life</h4>
+              <p>
+                <a
+                  class="reg-link"
+                  href="https://www.youtube.com/playlist?list=PLmcdWA2cZUftkCE9svUHZl8G8Gw-myudN"
+                  target="_blank"
+                >
+                  True Blessedness Series</a
+                ><br />
 
-                            <a class="reg-link"
-                                href="https://www.youtube.com/playlist?list=PLmcdWA2cZUfs8iC1Kuq1wMXsjMVOzn97u" target="_blank">
-                                The Hand of God Series</a><br />
+                <a
+                  class="reg-link"
+                  href="https://www.youtube.com/playlist?list=PLmcdWA2cZUfvMsffpy3cxKZupH5JL7uQV"
+                  target="_blank"
+                >
+                  Soldiers and Athletes</a
+                ><br />
 
-                            <a class="reg-link"
-                                href="https://open.spotify.com/episode/3xwOsVTrUKE46uRU6GVHGr?si=yZ_CzviXRJuncyTxgiU2YA" target="_blank">
-                                God is in control</a><br />
+                <a
+                  class="reg-link"
+                  href="https://www.youtube.com/playlist?list=PLmcdWA2cZUfvoxeg1_PgqvgLJnIhrVP-X"
+                  target="_blank"
+                >
+                  Laying up gold as dust</a
+                ><br />
 
-                            <a class="reg-link"
-                                href="https://open.spotify.com/episode/33xTqwxI77MCQX14mR40en?si=-wib2o6MThSAOTfwJexYlQ" target="_blank">
-                                God is in control - Part 2</a><br />
+                <a
+                  class="reg-link"
+                  href="https://www.youtube.com/playlist?list=PLmcdWA2cZUfsdjkVoUYXuSbJbWkh3Zm8x"
+                  target="_blank"
+                >
+                  Following God's plan for your life</a
+                ><br />
+              </p>
+            </div>
+            <div class="time">
+              <h4>Almost there!</h4>
+            </div>
+          </li>
 
-                            <a class="reg-link"
-                                href="https://www.youtube.com/playlist?list=PLmcdWA2cZUfuv4agwdJWPDNYAL1xo1r2I" target="_blank">
-                                Romans 9 Bible Seminar</a><br />
-                        </p>
-                    </div>
-                    <div class="time">
-                        <h4>Halfway point!</h4>
-                    </div>
-                </li>
+          <li>
+            <div class="content">
+              <h4>
+                What do I do now? <br />Join the church to be loved and be
+                taught
+              </h4>
+              <p>
+                <a
+                  class="reg-link"
+                  href="https://www.youtube.com/playlist?list=PLmcdWA2cZUfs8pgrcLqFXzZJajobGg4XA"
+                  target="_blank"
+                >
+                  Pillar and ground of truth</a
+                ><br />
 
-                <li>
-                    <div class="content">
-                        <h4>Understand the purpose of God for your life</h4>
-                        <p>
-
-
-                            <a class="reg-link"
-                                href="https://www.youtube.com/playlist?list=PLmcdWA2cZUftkCE9svUHZl8G8Gw-myudN" target="_blank">
-                                True Blessedness Series</a><br />
-
-                            <a class="reg-link"
-                                href="https://www.youtube.com/playlist?list=PLmcdWA2cZUfvMsffpy3cxKZupH5JL7uQV" target="_blank">
-                                Soldiers and Athletes</a><br />
-
-                            <a class="reg-link"
-                                href="https://www.youtube.com/playlist?list=PLmcdWA2cZUfvoxeg1_PgqvgLJnIhrVP-X" target="_blank">
-                                Laying up gold as dust</a><br />
-
-                            <a class="reg-link"
-                                href="https://www.youtube.com/playlist?list=PLmcdWA2cZUfsdjkVoUYXuSbJbWkh3Zm8x" target="_blank">
-                                Following God's plan for your life</a><br />
-
-                        </p>
-                    </div>
-                    <div class="time">
-                        <h4>Almost there!</h4>
-                    </div>
-                </li>
-
-                <li>
-                    <div class="content">
-                        <h4>What do I do now? <br />Join the church to be loved and be taught</h4>
-                        <p>
-
-                            <a class="reg-link"
-                                href="https://www.youtube.com/playlist?list=PLmcdWA2cZUfs8pgrcLqFXzZJajobGg4XA" target="_blank">
-                                Pillar and ground of truth</a><br />
-
-                            <a class="reg-link" href="https://www.youtube.com/watch?v=iaD3p-OQjNM" target="_blank">
-                                He set the solitary in families</a><br />
-
-                        </p>
-                    </div>
-                    <div class="time">
-                        <h4>You made it!</h4>
-                    </div>
-                </li>
-                <div style="clear:both;"></div>
-            </ul>
-        </div>
+                <a
+                  class="reg-link"
+                  href="https://www.youtube.com/watch?v=iaD3p-OQjNM"
+                  target="_blank"
+                >
+                  He set the solitary in families</a
+                ><br />
+              </p>
+            </div>
+            <div class="time">
+              <h4>You made it!</h4>
+            </div>
+          </li>
+          <div style="clear: both"></div>
+        </ul>
+      </div>
     </section>
 
     <footer class="footer-t">
-        <div class="container-footer">
-            <div class="footer-row">
-                <div class="footer-col">
-                    <h4>TEC</h4>
-                    <ul>
-                        <li><a href="{% url 'about' %}">About TEC</a></li>
-                        <li><a href="{% url 'contacts' %}">Contact Us</a></li>
-                        <li><a href="{% url 'give' %}">Give</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Learn More</h4>
-                    <ul>
-                        <li><a href="{% url 'roadmap' %}">Roadmap</a></li>
-                        <li><a href="{% url 'resource' %}">Resource Center</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Keep Up</h4>
-                    <ul>
-                        <li><a href="https://t.me/tec_media" target="_blank">Telegram</a></li>
-                        <li><a href="https://thisexcellentchurch.mixlr.com" target="_blank">Mixlr</a></li>
-                        <li><a href="https://www.youtube.com/@thisexcellentchurch" target="_blank">YouTube</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>follow us</h4>
-                    <div class="social-links">
-                        <a href="https://x.com/thisexcellentch" target="_blank"><i class="fab fa-x-twitter"></i></a>
-                        <a href="https://www.instagram.com/thisexcellentchurch/" target="_blank"><i
-                                class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
+      <div class="container-footer">
+        <div class="footer-row">
+          <div class="footer-col">
+            <h4>TEC</h4>
+            <ul>
+              <li><a href="{% url 'about' %}">About TEC</a></li>
+              <li><a href="{% url 'contacts' %}">Contact Us</a></li>
+              <li><a href="{% url 'give' %}">Give</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Learn More</h4>
+            <ul>
+              <li><a href="{% url 'roadmap' %}">Roadmap</a></li>
+              <li><a href="{% url 'resource' %}">Resource Center</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Keep Up</h4>
+            <ul>
+              <li>
+                <a href="https://t.me/tec_media" target="_blank">Telegram</a>
+              </li>
+              <li>
+                <a href="https://thisexcellentchurch.mixlr.com" target="_blank"
+                  >Mixlr</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.youtube.com/@thisexcellentchurch"
+                  target="_blank"
+                  >YouTube</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>follow us</h4>
+            <div class="social-links">
+              <a href="https://x.com/thisexcellentch" target="_blank"
+                ><i class="fab fa-x-twitter"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/thisexcellentchurch/"
+                target="_blank"
+                ><i class="fab fa-instagram"></i
+              ></a>
             </div>
+          </div>
         </div>
+      </div>
     </footer>
-</body>
-
+  </body>
 </html>
