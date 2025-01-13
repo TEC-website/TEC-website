@@ -160,14 +160,31 @@
 }
 
 @media screen and (max-width: 650px) {
-  .column {
-    width: 100%;
-    display: block;
+  .elder-row {
+    flex-direction: column;
+    gap: 24px;
   }
+}
 
-  .column-x {
+@media screen and (min-width: 650px) {
+  .elder-row {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .elder-row-container {
+    display: flex;
     width: 100%;
-    display: block;
+    justify-content: center;
+  }
+  .deacon-row-width {
+    max-width: 85%
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .deacon-row-width {
+    max-width: 75%;
   }
 }
 
@@ -183,7 +200,6 @@
 
 .card {
   text-align: center;
-  margin: auto;
 }
 
 .big-titles {
@@ -546,4 +562,8 @@ ul li a:hover {
   color: darkgray;
   text-decoration: underline;
   cursor: pointer;
+}
+
+.elder-row {
+  display: flex;
 }
