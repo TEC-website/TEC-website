@@ -6,7 +6,7 @@ function appendStructuredData() {
         "url": "https://thisexcellentchurch.org",
         "address": {
             "@type": "PostalAddress",
-            "streetAddress": "13 Otunba Toyin Abass Avenue, Off Prince Adesoji Ajose Street, New Road, Ogudu GRA 2",
+            "streetAddress": "21c Otunba Toyin Abass Avenue, Off Prince Adesoji Ajose Street, New Road, Ogudu GRA 2",
             "addressLocality": "Ogudu GRA 2",
             "addressRegion": "Lagos",
             "postalCode": "100242",
