@@ -45,9 +45,11 @@ INSTALLED_APPS = [
 
 # Hourly cronjob to fetch latest videos from TEC's YouTube channel
 CRONJOBS = [
-    ("0 * * * *", "django.core.management.call_command",
-     ["fetch_youtube_videos"]),
+    ("0 * * * *", "django.core.management.call_command", ["fetch_youtube_videos"]),
 ]
+
+# Crontab settings - log output to file for debugging
+CRONTAB_COMMAND_SUFFIX = "2>&1"
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
