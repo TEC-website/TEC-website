@@ -48,8 +48,9 @@ CRONJOBS = [
     ("0 * * * *", "django.core.management.call_command", ["fetch_youtube_videos"]),
 ]
 
-# Crontab settings - log output to file for debugging
-CRONTAB_COMMAND_SUFFIX = "2>&1"
+# Crontab settings - source env vars before running (cron daemon doesn't inherit container env)
+CRONTAB_COMMAND_PREFIX = "source /etc/cron_env.sh &&"
+CRONTAB_COMMAND_SUFFIX = ">> /var/log/cron.log 2>&1"
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",

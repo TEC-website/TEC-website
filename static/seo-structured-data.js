@@ -25,7 +25,7 @@ function appendStructuredData() {
         "knowsAbout": "Reformation, Charismatic, Evangelical, Christian, Church, Lagos, Nigeria",
         "legalName": "Phos Anthropos",
         "slogan": "TEC",
-        "description": "We are an evangelical, reformed and charismatic church in Lagos, Nigeria that affirms that salvation is by grace alone, through faith alone, in Christ alone, as revealed by scripture alone to the glory of God alone.",
+        "description": "Our excellence is of God, not ourselves. We affirm the Apostolic doctrines of the Protestant Reformation.",
         "email": "support@thisexcellentchurch.org",
         "logo": "https://thisexcellentchurch.org/static/assets/logo.png",
     };

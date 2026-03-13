@@ -20,6 +20,9 @@ python manage.py fetch_youtube_videos || echo "Warning: Failed to fetch videos (
 
 echo ""
 echo "Setting up cron jobs..."
+# Export current environment variables for cron (cron daemon doesn't inherit container env)
+printenv | grep -v "^_=" | sed 's/^\(.*\)$/export \1/' > /etc/cron_env.sh
+chmod +x /etc/cron_env.sh
 python manage.py crontab add
 
 echo ""
