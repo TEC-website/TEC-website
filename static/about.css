@@ -569,3 +569,18 @@ ul li a:hover {
 .elder-row {
   display: flex;
 }
+
+.about-wide-img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 7;
+  object-fit: cover;
+  object-position: 75% center; /* keep the pulpit in frame when cropped */
+  margin-bottom: 40px;
+}
+
+@media (max-width: 900px) {
+  .about-wide-img {
+    aspect-ratio: 4 / 3;
+  }
+}
