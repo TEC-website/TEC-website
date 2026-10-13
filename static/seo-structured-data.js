@@ -21,12 +21,11 @@ function appendStructuredData() {
             "@type": "Place",
             "address": "Lagos, Nigeria"
         },
-        "keywords": "Evangelical, Christian, Charismatic, Reformed, Church, Lagos, Nigeria",
-        "knowsAbout": "Reformation, Charismatic, Evangelical, Christian, Church, Lagos, Nigeria",
+        "keywords": "Confessional, Reformed, Christian, Church, Lagos, Nigeria",
+        "knowsAbout": "Reformation, Reformed Confessions, Christian, Church, Lagos, Nigeria",
         "legalName": "Phos Anthropos",
         "slogan": "TEC",
         "description": "Our excellence is of God, not ourselves. We affirm the Apostolic doctrines of the Protestant Reformation.",
-        "email": "support@thisexcellentchurch.org",
         "logo": "https://thisexcellentchurch.org/static/assets/logo.png",
     };
 
